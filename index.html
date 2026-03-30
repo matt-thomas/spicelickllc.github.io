@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Lick LLC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --ink: #1a1a18;
+            --paper: #f4f1eb;
+            --accent: #3d6b4f;
+            --muted: #8a8578;
+            --rule: #d4cfc5;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--paper);
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1.5rem;
+        }
+
+        .card {
+            max-width: 520px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 0.25rem;
+        }
+
+        .tagline {
+            color: var(--accent);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin: 1.5rem 0;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--ink);
+        }
+
+        .contact {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Spice Lick LLC</h1>
+            <div class="tagline">Software Development &amp; Publishing</div>
+            <hr>
+            <p>
+                We build mobile applications and provide custom software development
+                services for businesses. Based in West Virginia.
+            </p>
+
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Spice Lick LLC &middot; West Virginia
+    </footer>
+</body>
+</html>

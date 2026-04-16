@@ -57,7 +57,30 @@ def build_feed(events: list[ParsedEvent], resolver: Resolver, source: str) -> tu
     return stockings_payload, warnings_payload
 
 
-def write_payloads(stockings: dict, warnings: dict, out_dir: Path) -> None:
+def write_payloads(stockings: dict, warnings: dict, out_dir: Path) -> dict[str, bool]:
+    """Write the feed files. Returns per-file 'wrote' status so the caller
+    can log truthfully."""
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "stockings.json").write_text(json.dumps(stockings, indent=2) + "\n")
-    (out_dir / "warnings.json").write_text(json.dumps(warnings, indent=2) + "\n")
+    return {
+        "stockings.json": _write_if_content_changed(out_dir / "stockings.json", stockings),
+        "warnings.json": _write_if_content_changed(out_dir / "warnings.json", warnings),
+    }
+
+
+def _write_if_content_changed(path: Path, payload: dict) -> bool:
+    """Write only when the non-timestamp content actually differs. Returns
+    True when the file was written, False when skipped. Skipping timestamp-only
+    diffs keeps the GitHub Actions cron from opening a PR on every tick — the
+    diff gate in the workflow relies on byte equality.
+    """
+    new_fingerprint = {k: v for k, v in payload.items() if k != "generated_at"}
+    if path.exists():
+        try:
+            existing = json.loads(path.read_text())
+            existing_fingerprint = {k: v for k, v in existing.items() if k != "generated_at"}
+            if existing_fingerprint == new_fingerprint:
+                return False
+        except (json.JSONDecodeError, OSError):
+            pass
+    path.write_text(json.dumps(payload, indent=2) + "\n")
+    return True

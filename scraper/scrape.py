@@ -98,9 +98,11 @@ def main() -> int:
     resolver = Resolver.from_files(args.aliases, args.waterbodies)
     stockings, warnings = build_feed(events, resolver, source)
 
-    write_payloads(stockings, warnings, args.out)
-    print(f"Wrote {args.out / 'stockings.json'}  ({len(stockings['events'])} events)")
-    print(f"Wrote {args.out / 'warnings.json'}  ({len(warnings['unresolved'])} unresolved names)")
+    wrote = write_payloads(stockings, warnings, args.out)
+    stockings_tag = "wrote" if wrote["stockings.json"] else "unchanged"
+    warnings_tag = "wrote" if wrote["warnings.json"] else "unchanged"
+    print(f"{stockings_tag}: {args.out / 'stockings.json'}  ({len(stockings['events'])} events)")
+    print(f"{warnings_tag}: {args.out / 'warnings.json'}  ({len(warnings['unresolved'])} unresolved names)")
 
     if warnings["unresolved"]:
         top = warnings["unresolved"][:5]

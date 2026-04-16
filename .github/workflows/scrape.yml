@@ -1,0 +1,72 @@
+name: Scrape WV trout stockings
+
+# Runs the scraper every 6 hours and opens a PR if the resulting
+# wv-trout/stockings.json differs. Curation mode #3 (bot opens PR, human
+# merges) — after a stable season we can flip this to commit directly.
+
+on:
+  schedule:
+    - cron: '0 1,7,13,19 * * *'   # 4× / day (UTC)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: scrape-stockings
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run scraper
+        run: python3 scrape.py --out ../wv-trout
+        working-directory: scraper
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          SHEETS_API_KEY: ${{ secrets.SHEETS_API_KEY }}
+
+      - name: Run scraper tests
+        run: python3 -m unittest discover -s tests
+        working-directory: scraper
+
+      - name: Detect changes
+        id: diff
+        run: |
+          if git diff --quiet -- wv-trout/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "summary<<EOF"
+              python3 scraper/tools/diff_summary.py
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/scrape-update
+          delete-branch: true
+          commit-message: 'bot: update wv-trout/stockings.json'
+          title: 'Bot: new stockings scraped'
+          body: |
+            Automated scrape of the WV DNR stocking Sheet.
+
+            ${{ steps.diff.outputs.summary }}
+
+            Review the diff, then merge to publish the feed at
+            `https://spice-lick.com/wv-trout/stockings.json`.
+          add-paths: |
+            wv-trout/stockings.json
+            wv-trout/warnings.json

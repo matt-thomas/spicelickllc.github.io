@@ -1,0 +1,1745 @@
+[
+  {
+    "id": "lake:barbour:mill-creek-lake",
+    "kind": "lake",
+    "name": "Mill Creek Lake",
+    "county": "Barbour"
+  },
+  {
+    "id": "lake:barbour:teter-creek-lake",
+    "kind": "lake",
+    "name": "Teter Creek Lake",
+    "county": "Barbour"
+  },
+  {
+    "id": "lake:berkeley:poorhouse-pond",
+    "kind": "lake",
+    "name": "Poorhouse Pond",
+    "county": "Berkeley"
+  },
+  {
+    "id": "lake:berkeley:sleepy-creek-lake",
+    "kind": "lake",
+    "name": "Sleepy Creek Lake",
+    "county": "Berkeley"
+  },
+  {
+    "id": "lake:braxton:burnsville-lake",
+    "kind": "lake",
+    "name": "Burnsville Lake",
+    "county": "Braxton"
+  },
+  {
+    "id": "lake:braxton:salt-lick-pond-9",
+    "kind": "lake",
+    "name": "Salt Lick Pond 9",
+    "county": "Braxton"
+  },
+  {
+    "id": "lake:braxton:sutton-lake",
+    "kind": "lake",
+    "name": "Sutton Lake",
+    "county": "Braxton"
+  },
+  {
+    "id": "lake:brooke:castleman-run-lake",
+    "kind": "lake",
+    "name": "Castleman Run Lake",
+    "county": "Brooke"
+  },
+  {
+    "id": "lake:cabell:barboursville-lake",
+    "kind": "lake",
+    "name": "Barboursville Lake",
+    "county": "Cabell"
+  },
+  {
+    "id": "lake:cabell:underwood-lake",
+    "kind": "lake",
+    "name": "Underwood Lake",
+    "county": "Cabell"
+  },
+  {
+    "id": "lake:clay:wallback-lake",
+    "kind": "lake",
+    "name": "Wallback Lake",
+    "county": "Clay"
+  },
+  {
+    "id": "lake:fayette:boley-lake",
+    "kind": "lake",
+    "name": "Boley Lake",
+    "county": "Fayette"
+  },
+  {
+    "id": "lake:fayette:hawks-nest-state-park-lake",
+    "kind": "lake",
+    "name": "Hawks Nest State Park Lake",
+    "county": "Fayette"
+  },
+  {
+    "id": "lake:fayette:plum-orchard-lake",
+    "kind": "lake",
+    "name": "Plum Orchard Lake",
+    "county": "Fayette"
+  },
+  {
+    "id": "lake:gilmer:cedar-creek-lake",
+    "kind": "lake",
+    "name": "Cedar Creek Lake",
+    "county": "Gilmer"
+  },
+  {
+    "id": "lake:grant:mount-storm-lake",
+    "kind": "lake",
+    "name": "Mount Storm Lake",
+    "county": "Grant"
+  },
+  {
+    "id": "lake:grant:new-creek-dam-14",
+    "kind": "lake",
+    "name": "New Creek Dam 14",
+    "county": "Grant"
+  },
+  {
+    "id": "lake:grant:south-mill-creek-lake",
+    "kind": "lake",
+    "name": "South Mill Creek Lake",
+    "county": "Grant"
+  },
+  {
+    "id": "lake:greenbrier:sherwood-lake",
+    "kind": "lake",
+    "name": "Sherwood Lake",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "lake:greenbrier:summit-lake",
+    "kind": "lake",
+    "name": "Summit Lake",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "lake:greenbrier:tuckahoe-lake",
+    "kind": "lake",
+    "name": "Tuckahoe Lake",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "lake:hampshire:edwards-run-lake",
+    "kind": "lake",
+    "name": "Edwards Run Lake",
+    "county": "Hampshire"
+  },
+  {
+    "id": "lake:hancock:tomlinson-run-lake",
+    "kind": "lake",
+    "name": "Tomlinson Run Lake",
+    "county": "Hancock"
+  },
+  {
+    "id": "lake:hardy:kimsey-run-lake",
+    "kind": "lake",
+    "name": "Kimsey Run Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:hardy:parker-hollow-lake",
+    "kind": "lake",
+    "name": "Parker Hollow Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:hardy:rock-cliff-lake",
+    "kind": "lake",
+    "name": "Rock Cliff Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:hardy:trout-pond-lake",
+    "kind": "lake",
+    "name": "Trout Pond Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:hardy:upper-cove-run-lake",
+    "kind": "lake",
+    "name": "Upper Cove Run Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:hardy:warden-lake",
+    "kind": "lake",
+    "name": "Warden Lake",
+    "county": "Hardy"
+  },
+  {
+    "id": "lake:harrison:deegan-lake",
+    "kind": "lake",
+    "name": "Deegan Lake",
+    "county": "Harrison"
+  },
+  {
+    "id": "lake:harrison:dog-run-lake",
+    "kind": "lake",
+    "name": "Dog Run Lake",
+    "county": "Harrison"
+  },
+  {
+    "id": "lake:harrison:hinkle-lake",
+    "kind": "lake",
+    "name": "Hinkle Lake",
+    "county": "Harrison"
+  },
+  {
+    "id": "lake:jackson:elk-fork-lake",
+    "kind": "lake",
+    "name": "Elk Fork Lake",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:frozencamp-left-fork",
+    "kind": "lake",
+    "name": "Frozencamp Left Fork",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:frozencamp-right-fork",
+    "kind": "lake",
+    "name": "Frozencamp Right Fork",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:obrien-lake",
+    "kind": "lake",
+    "name": "O'Brien Lake",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:rollins-lake",
+    "kind": "lake",
+    "name": "Rollins Lake",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:turkey-run-lake-jackson-co",
+    "kind": "lake",
+    "name": "Turkey Run Lake (Jackson Co.)",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:jackson:woodrum-lake",
+    "kind": "lake",
+    "name": "Woodrum Lake",
+    "county": "Jackson"
+  },
+  {
+    "id": "lake:kanawha:anderson-lake",
+    "kind": "lake",
+    "name": "Anderson Lake",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:coonskin-park-pond",
+    "kind": "lake",
+    "name": "Coonskin Park Pond",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:elk-twomile-creek-site-12",
+    "kind": "lake",
+    "name": "Elk Twomile Creek (Site 12)",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:elk-twomile-creek-site-13",
+    "kind": "lake",
+    "name": "Elk Twomile Creek (Site 13)",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:elk-twomile-creek-site-14",
+    "kind": "lake",
+    "name": "Elk Twomile Creek (Site 14)",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:kanawha-state-forest-pond",
+    "kind": "lake",
+    "name": "Kanawha State Forest Pond",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:pettigrew-lake",
+    "kind": "lake",
+    "name": "Pettigrew Lake",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:kanawha:ridenour-lake",
+    "kind": "lake",
+    "name": "Ridenour Lake",
+    "county": "Kanawha"
+  },
+  {
+    "id": "lake:lewis:stonecoal-lake",
+    "kind": "lake",
+    "name": "Stonecoal Lake",
+    "county": "Lewis"
+  },
+  {
+    "id": "lake:lewis:stonewall-jackson-lake",
+    "kind": "lake",
+    "name": "Stonewall Jackson Lake",
+    "county": "Lewis"
+  },
+  {
+    "id": "lake:lincoln:upper-mud-lake",
+    "kind": "lake",
+    "name": "Upper Mud Lake",
+    "county": "Lincoln"
+  },
+  {
+    "id": "lake:logan:chief-logan-lake",
+    "kind": "lake",
+    "name": "Chief Logan Lake",
+    "county": "Logan"
+  },
+  {
+    "id": "lake:logan:logan-county-airport-pond",
+    "kind": "lake",
+    "name": "Logan County Airport Pond",
+    "county": "Logan"
+  },
+  {
+    "id": "lake:logan:rockhouse-lake",
+    "kind": "lake",
+    "name": "Rockhouse Lake",
+    "county": "Logan"
+  },
+  {
+    "id": "lake:marion:big-run-lake",
+    "kind": "lake",
+    "name": "Big Run Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:curtisville-lake",
+    "kind": "lake",
+    "name": "Curtisville Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:dents-run-lake",
+    "kind": "lake",
+    "name": "Dents Run Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:flat-run-lake",
+    "kind": "lake",
+    "name": "Flat Run Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:huey-run-lake",
+    "kind": "lake",
+    "name": "Huey Run Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:mannington-lake",
+    "kind": "lake",
+    "name": "Mannington Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marion:whetstone-lake",
+    "kind": "lake",
+    "name": "Whetstone Lake",
+    "county": "Marion"
+  },
+  {
+    "id": "lake:marshall:cameron-lake",
+    "kind": "lake",
+    "name": "Cameron Lake",
+    "county": "Marshall"
+  },
+  {
+    "id": "lake:marshall:dunkard-fork-lake",
+    "kind": "lake",
+    "name": "Dunkard Fork Lake",
+    "county": "Marshall"
+  },
+  {
+    "id": "lake:marshall:turkey-run-lake-marshall-co",
+    "kind": "lake",
+    "name": "Turkey Run Lake (Marshall Co.)",
+    "county": "Marshall"
+  },
+  {
+    "id": "lake:marshall:wolf-run-lake",
+    "kind": "lake",
+    "name": "Wolf Run Lake",
+    "county": "Marshall"
+  },
+  {
+    "id": "lake:mason:chief-cornstalk-lake",
+    "kind": "lake",
+    "name": "Chief Cornstalk Lake",
+    "county": "Mason"
+  },
+  {
+    "id": "lake:mason:krodel-lake",
+    "kind": "lake",
+    "name": "Krodel Lake",
+    "county": "Mason"
+  },
+  {
+    "id": "lake:mason:mcclintic-ponds",
+    "kind": "lake",
+    "name": "McClintic Ponds",
+    "county": "Mason"
+  },
+  {
+    "id": "lake:mcdowell:anawalt-lake",
+    "kind": "lake",
+    "name": "Anawalt Lake",
+    "county": "McDowell"
+  },
+  {
+    "id": "lake:mcdowell:berwind-lake",
+    "kind": "lake",
+    "name": "Berwind Lake",
+    "county": "McDowell"
+  },
+  {
+    "id": "lake:mercer:james-p-bailey-lake",
+    "kind": "lake",
+    "name": "James P. Bailey Lake",
+    "county": "Mercer"
+  },
+  {
+    "id": "lake:mercer:jimmy-lewis-lake",
+    "kind": "lake",
+    "name": "Jimmy Lewis Lake",
+    "county": "Mercer"
+  },
+  {
+    "id": "lake:mercer:kee-reservoir",
+    "kind": "lake",
+    "name": "Kee Reservoir",
+    "county": "Mercer"
+  },
+  {
+    "id": "lake:mineral:fort-ashby-lake",
+    "kind": "lake",
+    "name": "Fort Ashby Lake",
+    "county": "Mineral"
+  },
+  {
+    "id": "lake:mineral:jennings-randolph-lake",
+    "kind": "lake",
+    "name": "Jennings Randolph Lake",
+    "county": "Mineral"
+  },
+  {
+    "id": "lake:mineral:larenim-lake",
+    "kind": "lake",
+    "name": "Larenim Lake",
+    "county": "Mineral"
+  },
+  {
+    "id": "lake:mingo:laurel-lake",
+    "kind": "lake",
+    "name": "Laurel Lake",
+    "county": "Mingo"
+  },
+  {
+    "id": "lake:monongalia:cheat-lake",
+    "kind": "lake",
+    "name": "Cheat Lake",
+    "county": "Monongalia"
+  },
+  {
+    "id": "lake:monongalia:coopers-rock-lake",
+    "kind": "lake",
+    "name": "Coopers Rock Lake",
+    "county": "Monongalia"
+  },
+  {
+    "id": "lake:monongalia:dixon-lake",
+    "kind": "lake",
+    "name": "Dixon Lake",
+    "county": "Monongalia"
+  },
+  {
+    "id": "lake:monongalia:mason-lake",
+    "kind": "lake",
+    "name": "Mason Lake",
+    "county": "Monongalia"
+  },
+  {
+    "id": "lake:monongalia:westover-park",
+    "kind": "lake",
+    "name": "Westover Park",
+    "county": "Monongalia"
+  },
+  {
+    "id": "lake:monroe:moncove-lake",
+    "kind": "lake",
+    "name": "Moncove Lake",
+    "county": "Monroe"
+  },
+  {
+    "id": "lake:morgan:cacapon-state-park-lakes",
+    "kind": "lake",
+    "name": "Cacapon State Park Lakes",
+    "county": "Morgan"
+  },
+  {
+    "id": "lake:nicholas:indian-rock-lake",
+    "kind": "lake",
+    "name": "Indian Rock Lake",
+    "county": "Nicholas"
+  },
+  {
+    "id": "lake:nicholas:summersville-lake",
+    "kind": "lake",
+    "name": "Summersville Lake",
+    "county": "Nicholas"
+  },
+  {
+    "id": "lake:ohio:baker-lake",
+    "kind": "lake",
+    "name": "Baker Lake",
+    "county": "Ohio"
+  },
+  {
+    "id": "lake:ohio:bear-rock-lakes",
+    "kind": "lake",
+    "name": "Bear Rock Lakes",
+    "county": "Ohio"
+  },
+  {
+    "id": "lake:ohio:middle-wheeling-creek-lake",
+    "kind": "lake",
+    "name": "Middle Wheeling Creek Lake",
+    "county": "Ohio"
+  },
+  {
+    "id": "lake:pendleton:brandywine-lake",
+    "kind": "lake",
+    "name": "Brandywine Lake",
+    "county": "Pendleton"
+  },
+  {
+    "id": "lake:pendleton:brushy-fork-lake",
+    "kind": "lake",
+    "name": "Brushy Fork Lake",
+    "county": "Pendleton"
+  },
+  {
+    "id": "lake:pendleton:camp-run-lake",
+    "kind": "lake",
+    "name": "Camp Run Lake",
+    "county": "Pendleton"
+  },
+  {
+    "id": "lake:pocahontas:buffalo-fork-lake",
+    "kind": "lake",
+    "name": "Buffalo Fork Lake",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "lake:pocahontas:handley-pond",
+    "kind": "lake",
+    "name": "Handley Pond",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "lake:pocahontas:seneca-lake",
+    "kind": "lake",
+    "name": "Seneca Lake",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "lake:pocahontas:watoga-lake",
+    "kind": "lake",
+    "name": "Watoga Lake",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "lake:preston:fairfax-ponds-lake",
+    "kind": "lake",
+    "name": "Fairfax Ponds Lake",
+    "county": "Preston"
+  },
+  {
+    "id": "lake:preston:newburg-lake",
+    "kind": "lake",
+    "name": "Newburg Lake",
+    "county": "Preston"
+  },
+  {
+    "id": "lake:preston:upper-deckers-lake",
+    "kind": "lake",
+    "name": "Upper Deckers Lake",
+    "county": "Preston"
+  },
+  {
+    "id": "lake:putnam:hurricane-w-s-reservoir",
+    "kind": "lake",
+    "name": "Hurricane W.S. Reservoir",
+    "county": "Putnam"
+  },
+  {
+    "id": "lake:raleigh:fitzpatrick-lake",
+    "kind": "lake",
+    "name": "Fitzpatrick Lake",
+    "county": "Raleigh"
+  },
+  {
+    "id": "lake:raleigh:little-beaver-lake",
+    "kind": "lake",
+    "name": "Little Beaver Lake",
+    "county": "Raleigh"
+  },
+  {
+    "id": "lake:raleigh:raleigh-county-airport-pond",
+    "kind": "lake",
+    "name": "Raleigh County Airport Pond",
+    "county": "Raleigh"
+  },
+  {
+    "id": "lake:raleigh:stephens-lake",
+    "kind": "lake",
+    "name": "Stephens Lake",
+    "county": "Raleigh"
+  },
+  {
+    "id": "lake:randolph:elkwater-fork-lake",
+    "kind": "lake",
+    "name": "Elkwater Fork Lake",
+    "county": "Randolph"
+  },
+  {
+    "id": "lake:randolph:spruce-knob-lake",
+    "kind": "lake",
+    "name": "Spruce Knob Lake",
+    "county": "Randolph"
+  },
+  {
+    "id": "lake:randolph:tygart-river-backwaters",
+    "kind": "lake",
+    "name": "Tygart River Backwaters",
+    "county": "Randolph"
+  },
+  {
+    "id": "lake:ritchie:north-bend-lake",
+    "kind": "lake",
+    "name": "North Bend Lake",
+    "county": "Ritchie"
+  },
+  {
+    "id": "lake:ritchie:north-bend-sp-pond",
+    "kind": "lake",
+    "name": "North Bend SP Pond",
+    "county": "Ritchie"
+  },
+  {
+    "id": "lake:ritchie:pennsboro-w-s-reservoir",
+    "kind": "lake",
+    "name": "Pennsboro W.S. Reservoir",
+    "county": "Ritchie"
+  },
+  {
+    "id": "lake:ritchie:tracy-lake",
+    "kind": "lake",
+    "name": "Tracy Lake",
+    "county": "Ritchie"
+  },
+  {
+    "id": "lake:roane:charles-fork-lake",
+    "kind": "lake",
+    "name": "Charles Fork Lake",
+    "county": "Roane"
+  },
+  {
+    "id": "lake:roane:miletree-lake",
+    "kind": "lake",
+    "name": "Miletree Lake",
+    "county": "Roane"
+  },
+  {
+    "id": "lake:roane:silcott-fork-lake",
+    "kind": "lake",
+    "name": "Silcott Fork Lake",
+    "county": "Roane"
+  },
+  {
+    "id": "lake:summers:bluestone-lake",
+    "kind": "lake",
+    "name": "Bluestone Lake",
+    "county": "Summers"
+  },
+  {
+    "id": "lake:summers:mountain-valley-lake",
+    "kind": "lake",
+    "name": "Mountain Valley Lake",
+    "county": "Summers"
+  },
+  {
+    "id": "lake:summers:pipestem-lake",
+    "kind": "lake",
+    "name": "Pipestem Lake",
+    "county": "Summers"
+  },
+  {
+    "id": "lake:taylor:doe-run-lake",
+    "kind": "lake",
+    "name": "Doe Run Lake",
+    "county": "Taylor"
+  },
+  {
+    "id": "lake:taylor:tygart-lake",
+    "kind": "lake",
+    "name": "Tygart Lake",
+    "county": "Taylor"
+  },
+  {
+    "id": "lake:tucker:pendleton-lake",
+    "kind": "lake",
+    "name": "Pendleton Lake",
+    "county": "Tucker"
+  },
+  {
+    "id": "lake:tucker:thomas-park-lake",
+    "kind": "lake",
+    "name": "Thomas Park Lake",
+    "county": "Tucker"
+  },
+  {
+    "id": "lake:tyler:conaway-run-lake",
+    "kind": "lake",
+    "name": "Conaway Run Lake",
+    "county": "Tyler"
+  },
+  {
+    "id": "lake:upshur:french-creek-lake",
+    "kind": "lake",
+    "name": "French Creek Lake",
+    "county": "Upshur"
+  },
+  {
+    "id": "lake:wayne:beech-fork-lake",
+    "kind": "lake",
+    "name": "Beech Fork Lake",
+    "county": "Wayne"
+  },
+  {
+    "id": "lake:wayne:east-lynn-lake",
+    "kind": "lake",
+    "name": "East Lynn Lake",
+    "county": "Wayne"
+  },
+  {
+    "id": "lake:wayne:lick-creek-lake",
+    "kind": "lake",
+    "name": "Lick Creek Lake",
+    "county": "Wayne"
+  },
+  {
+    "id": "lake:wayne:millers-fork-pond",
+    "kind": "lake",
+    "name": "Millers Fork Pond",
+    "county": "Wayne"
+  },
+  {
+    "id": "lake:webster:big-ditch-lake",
+    "kind": "lake",
+    "name": "Big Ditch Lake",
+    "county": "Webster"
+  },
+  {
+    "id": "lake:wood:mountwood-lake",
+    "kind": "lake",
+    "name": "Mountwood Lake",
+    "county": "Wood"
+  },
+  {
+    "id": "lake:wyoming:horse-creek-lake",
+    "kind": "lake",
+    "name": "Horse Creek Lake",
+    "county": "Wyoming"
+  },
+  {
+    "id": "lake:wyoming:r-d-bailey-lake",
+    "kind": "lake",
+    "name": "R.D. Bailey Lake",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:berkeley:middle-creek",
+    "kind": "stream",
+    "name": "Middle Creek",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:berkeley:mill-creek-berkeley",
+    "kind": "stream",
+    "name": "Mill Creek (Berkeley)",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:berkeley:opequon-creek",
+    "kind": "stream",
+    "name": "Opequon Creek",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:berkeley:rocky-marsh-run",
+    "kind": "stream",
+    "name": "Rocky Marsh Run",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:berkeley:tilhance-creek",
+    "kind": "stream",
+    "name": "Tilhance Creek",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:berkeley:tuscarora-creek",
+    "kind": "stream",
+    "name": "Tuscarora Creek",
+    "county": "Berkeley"
+  },
+  {
+    "id": "stream:boone:hopkins-fork",
+    "kind": "stream",
+    "name": "Hopkins Fork",
+    "county": "Boone"
+  },
+  {
+    "id": "stream:boone:pond-fork",
+    "kind": "stream",
+    "name": "Pond Fork",
+    "county": "Boone"
+  },
+  {
+    "id": "stream:boone:spruce-laurel-fork",
+    "kind": "stream",
+    "name": "Spruce Laurel Fork",
+    "county": "Boone"
+  },
+  {
+    "id": "stream:braxton:burnsville-lake-tailwaters",
+    "kind": "stream",
+    "name": "Burnsville Lake (Tailwaters)",
+    "county": "Braxton"
+  },
+  {
+    "id": "stream:braxton:sutton-lake-tailwaters",
+    "kind": "stream",
+    "name": "Sutton Lake (Tailwaters)",
+    "county": "Braxton"
+  },
+  {
+    "id": "stream:brooke:buffalo-creek-brooke",
+    "kind": "stream",
+    "name": "Buffalo Creek (Brooke)",
+    "county": "Brooke"
+  },
+  {
+    "id": "stream:clay:buffalo-creek-clay",
+    "kind": "stream",
+    "name": "Buffalo Creek (Clay)",
+    "county": "Clay"
+  },
+  {
+    "id": "stream:fayette:dunloup-creek",
+    "kind": "stream",
+    "name": "Dunloup Creek",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:fayette:glade-creek-babcock",
+    "kind": "stream",
+    "name": "Glade Creek (Babcock)",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:fayette:laurel-creek-fayette",
+    "kind": "stream",
+    "name": "Laurel Creek (Fayette)",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:fayette:mill-creek-fayette",
+    "kind": "stream",
+    "name": "Mill Creek (Fayette)",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:fayette:paint-creek",
+    "kind": "stream",
+    "name": "Paint Creek",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:fayette:paint-creek-delayed-harvest",
+    "kind": "stream",
+    "name": "Paint Creek (Delayed Harvest)",
+    "county": "Fayette"
+  },
+  {
+    "id": "stream:grant:north-fork-of-lunice-creek",
+    "kind": "stream",
+    "name": "North Fork of Lunice Creek",
+    "county": "Grant"
+  },
+  {
+    "id": "stream:grant:north-fork-of-patterson-creek",
+    "kind": "stream",
+    "name": "North Fork of Patterson Creek",
+    "county": "Grant"
+  },
+  {
+    "id": "stream:grant:south-branch-potomac-river",
+    "kind": "stream",
+    "name": "South Branch Potomac River",
+    "county": "Grant"
+  },
+  {
+    "id": "stream:grant:spring-run-fly-fishing-only",
+    "kind": "stream",
+    "name": "Spring Run (Fly Fishing Only)",
+    "county": "Grant"
+  },
+  {
+    "id": "stream:greenbrier:anthony-creek",
+    "kind": "stream",
+    "name": "Anthony Creek",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:big-clear-creek",
+    "kind": "stream",
+    "name": "Big Clear Creek",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:howards-creek",
+    "kind": "stream",
+    "name": "Howards Creek",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:little-clear-creek",
+    "kind": "stream",
+    "name": "Little Clear Creek",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:meadow-creek-greenbrier",
+    "kind": "stream",
+    "name": "Meadow Creek (Greenbrier)",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:milligan-creek-fly-fishing-only",
+    "kind": "stream",
+    "name": "Milligan Creek (Fly Fishing Only)",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:north-fork-of-cherry-river",
+    "kind": "stream",
+    "name": "North Fork of Cherry River",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:greenbrier:south-fork-of-cherry-river",
+    "kind": "stream",
+    "name": "South Fork of Cherry River",
+    "county": "Greenbrier"
+  },
+  {
+    "id": "stream:hampshire:dillons-run",
+    "kind": "stream",
+    "name": "Dillons Run",
+    "county": "Hampshire"
+  },
+  {
+    "id": "stream:hampshire:edwards-run-fly-fishing-only",
+    "kind": "stream",
+    "name": "Edwards Run (Fly Fishing Only)",
+    "county": "Hampshire"
+  },
+  {
+    "id": "stream:hampshire:mill-creek-hampshire",
+    "kind": "stream",
+    "name": "Mill Creek (Hampshire)",
+    "county": "Hampshire"
+  },
+  {
+    "id": "stream:hancock:kings-creek",
+    "kind": "stream",
+    "name": "Kings Creek",
+    "county": "Hancock"
+  },
+  {
+    "id": "stream:hancock:tomlinson-run",
+    "kind": "stream",
+    "name": "Tomlinson Run",
+    "county": "Hancock"
+  },
+  {
+    "id": "stream:hardy:lost-river",
+    "kind": "stream",
+    "name": "Lost River",
+    "county": "Hardy"
+  },
+  {
+    "id": "stream:hardy:moores-run",
+    "kind": "stream",
+    "name": "Moores Run",
+    "county": "Hardy"
+  },
+  {
+    "id": "stream:hardy:north-river",
+    "kind": "stream",
+    "name": "North River",
+    "county": "Hardy"
+  },
+  {
+    "id": "stream:hardy:trout-run",
+    "kind": "stream",
+    "name": "Trout Run",
+    "county": "Hardy"
+  },
+  {
+    "id": "stream:hardy:waites-run",
+    "kind": "stream",
+    "name": "Waites Run",
+    "county": "Hardy"
+  },
+  {
+    "id": "stream:jefferson:bullskin-run",
+    "kind": "stream",
+    "name": "Bullskin Run",
+    "county": "Jefferson"
+  },
+  {
+    "id": "stream:jefferson:evitts-run",
+    "kind": "stream",
+    "name": "Evitts Run",
+    "county": "Jefferson"
+  },
+  {
+    "id": "stream:kanawha:davis-creek",
+    "kind": "stream",
+    "name": "Davis Creek",
+    "county": "Kanawha"
+  },
+  {
+    "id": "stream:lewis:stonewall-jackson-lake-tailwaters",
+    "kind": "stream",
+    "name": "Stonewall Jackson Lake (Tailwaters)",
+    "county": "Lewis"
+  },
+  {
+    "id": "stream:logan:buffalo-creek-logan",
+    "kind": "stream",
+    "name": "Buffalo Creek (Logan)",
+    "county": "Logan"
+  },
+  {
+    "id": "stream:marion:paw-paw-creek",
+    "kind": "stream",
+    "name": "Paw Paw Creek",
+    "county": "Marion"
+  },
+  {
+    "id": "stream:marshall:wheeling-creek",
+    "kind": "stream",
+    "name": "Wheeling Creek",
+    "county": "Marshall"
+  },
+  {
+    "id": "stream:mcdowell:clear-fork-mcdowell",
+    "kind": "stream",
+    "name": "Clear Fork (McDowell)",
+    "county": "McDowell"
+  },
+  {
+    "id": "stream:mcdowell:dry-fork-mcdowell",
+    "kind": "stream",
+    "name": "Dry Fork (McDowell)",
+    "county": "McDowell"
+  },
+  {
+    "id": "stream:mcdowell:elkhorn-creek-c-r",
+    "kind": "stream",
+    "name": "Elkhorn Creek (C&R)",
+    "county": "Mcdowell"
+  },
+  {
+    "id": "stream:mcdowell:panther-creek",
+    "kind": "stream",
+    "name": "Panther Creek",
+    "county": "McDowell"
+  },
+  {
+    "id": "stream:mercer:camp-creek",
+    "kind": "stream",
+    "name": "Camp Creek",
+    "county": "Mercer"
+  },
+  {
+    "id": "stream:mercer:east-river-of-new-river",
+    "kind": "stream",
+    "name": "East River of New River",
+    "county": "Mercer"
+  },
+  {
+    "id": "stream:mercer:mash-fork",
+    "kind": "stream",
+    "name": "Mash Fork",
+    "county": "Mercer"
+  },
+  {
+    "id": "stream:mercer:mash-fork-children-and-class-q",
+    "kind": "stream",
+    "name": "Mash Fork (Children and Class Q)",
+    "county": "Mercer"
+  },
+  {
+    "id": "stream:mineral:new-creek",
+    "kind": "stream",
+    "name": "New Creek",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mineral:north-branch-of-potomac-river",
+    "kind": "stream",
+    "name": "North Branch of Potomac River",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-delayed-harvest",
+    "kind": "stream",
+    "name": "North Branch Potomac River (Delayed Harvest)",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-gorman",
+    "kind": "stream",
+    "name": "North Branch Potomac River (Gorman)",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-kitzmiller",
+    "kind": "stream",
+    "name": "North Branch Potomac River (Kitzmiller)",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-lower",
+    "kind": "stream",
+    "name": "North Branch Potomac River",
+    "county": "Mineral",
+    "section": "lower"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-middle",
+    "kind": "stream",
+    "name": "North Branch Potomac River",
+    "county": "Mineral",
+    "section": "middle"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-upper",
+    "kind": "stream",
+    "name": "North Branch Potomac River",
+    "county": "Mineral",
+    "section": "upper"
+  },
+  {
+    "id": "stream:mineral:north-branch-potomac-river-westernport",
+    "kind": "stream",
+    "name": "North Branch Potomac River (Westernport)",
+    "county": "Mineral"
+  },
+  {
+    "id": "stream:mingo:r-d-bailey-lake-tailwaters",
+    "kind": "stream",
+    "name": "R.D. Bailey Lake (Tailwaters)",
+    "county": "Mingo"
+  },
+  {
+    "id": "stream:monongalia:whiteday-creek",
+    "kind": "stream",
+    "name": "Whiteday Creek",
+    "county": "Monongalia"
+  },
+  {
+    "id": "stream:monroe:potts-creek",
+    "kind": "stream",
+    "name": "Potts Creek",
+    "county": "Monroe"
+  },
+  {
+    "id": "stream:monroe:rich-creek",
+    "kind": "stream",
+    "name": "Rich Creek",
+    "county": "Monroe"
+  },
+  {
+    "id": "stream:monroe:second-creek-fly-fishing-only",
+    "kind": "stream",
+    "name": "Second Creek (Fly Fishing Only)",
+    "county": "Monroe"
+  },
+  {
+    "id": "stream:nicholas:cherry-river",
+    "kind": "stream",
+    "name": "Cherry River",
+    "county": "Nicholas"
+  },
+  {
+    "id": "stream:nicholas:laurel-creek-greenbrier-nicholas",
+    "kind": "stream",
+    "name": "Laurel Creek (Greenbrier & Nicholas)",
+    "county": "Nicholas"
+  },
+  {
+    "id": "stream:nicholas:north-fork-of-cherry-river-c-r",
+    "kind": "stream",
+    "name": "North Fork of Cherry River (C&R)",
+    "county": "Nicholas"
+  },
+  {
+    "id": "stream:nicholas:summersville-lake-tailwaters",
+    "kind": "stream",
+    "name": "Summersville Lake (Tailwaters)",
+    "county": "Nicholas"
+  },
+  {
+    "id": "stream:ohio:middle-wheeling-creek-delayed-harvest",
+    "kind": "stream",
+    "name": "Middle Wheeling Creek (Delayed Harvest)",
+    "county": "Ohio"
+  },
+  {
+    "id": "stream:pendleton:north-fork-of-south-branch",
+    "kind": "stream",
+    "name": "North Fork of South Branch",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:north-fork-of-south-branch-c-r",
+    "kind": "stream",
+    "name": "North Fork of South Branch (C&R)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:seneca-creek-c-r",
+    "kind": "stream",
+    "name": "Seneca Creek (C&R)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:south-branch-franklin-section",
+    "kind": "stream",
+    "name": "South Branch (Franklin Section)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:south-branch-of-the-potomac-river-c-r",
+    "kind": "stream",
+    "name": "South Branch of the Potomac River (C&R)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:south-branch-smoke-hole-section",
+    "kind": "stream",
+    "name": "South Branch (Smoke Hole Section)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pendleton:thorn-creek-fly-fishing-only",
+    "kind": "stream",
+    "name": "Thorn Creek (Fly Fishing Only)",
+    "county": "Pendleton"
+  },
+  {
+    "id": "stream:pocahontas:cranberry-river-area-1-c-r",
+    "kind": "stream",
+    "name": "Cranberry River - Area 1 (C&R)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:dogway-fork-of-the-cranberry-fly-fishing-only",
+    "kind": "stream",
+    "name": "Dogway Fork of the Cranberry (Fly Fishing Only)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:greenbrier-river",
+    "kind": "stream",
+    "name": "Greenbrier River",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:greenbrier-river-cass",
+    "kind": "stream",
+    "name": "Greenbrier River (Cass)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:greenbrier-river-marlinton-section",
+    "kind": "stream",
+    "name": "Greenbrier River (Marlinton Section)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:greenbrier-river-rail",
+    "kind": "stream",
+    "name": "Greenbrier River Rail",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:hills-creek",
+    "kind": "stream",
+    "name": "Hills Creek",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:knapps-creek",
+    "kind": "stream",
+    "name": "Knapps Creek",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:little-river-west-fork",
+    "kind": "stream",
+    "name": "Little River (West Fork)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:middle-fork-williams-river-and-tributaries-c-r",
+    "kind": "stream",
+    "name": "Middle Fork Williams River and tributaries (C&R)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:north-fork-of-cranberry-river-c-r",
+    "kind": "stream",
+    "name": "North Fork of Cranberry River (C&R)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:slaty-fork-section-of-elk-river-c-r",
+    "kind": "stream",
+    "name": "Slaty Fork section of Elk River (C&R)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:south-fork-of-cranberry-river",
+    "kind": "stream",
+    "name": "South Fork of Cranberry River",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:tea-creek-and-tributaries-c-r",
+    "kind": "stream",
+    "name": "Tea Creek and tributaries (C&R)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:west-fork-of-greenbrier-river",
+    "kind": "stream",
+    "name": "West Fork of Greenbrier River",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:pocahontas:williams-river-delayed-harvest",
+    "kind": "stream",
+    "name": "Williams River (Delayed Harvest)",
+    "county": "Pocahontas"
+  },
+  {
+    "id": "stream:preston:big-sandy-creek",
+    "kind": "stream",
+    "name": "Big Sandy Creek",
+    "county": "Preston"
+  },
+  {
+    "id": "stream:preston:rhine-creek",
+    "kind": "stream",
+    "name": "Rhine Creek",
+    "county": "Preston"
+  },
+  {
+    "id": "stream:raleigh:glade-creek-of-new-river",
+    "kind": "stream",
+    "name": "Glade Creek of New River",
+    "county": "Raleigh"
+  },
+  {
+    "id": "stream:raleigh:glade-creek-of-new-river-c-r",
+    "kind": "stream",
+    "name": "Glade Creek of New River (C&R)",
+    "county": "Raleigh"
+  },
+  {
+    "id": "stream:raleigh:marsh-fork",
+    "kind": "stream",
+    "name": "Marsh Fork",
+    "county": "Raleigh"
+  },
+  {
+    "id": "stream:randolph:dry-fork-randolph",
+    "kind": "stream",
+    "name": "Dry Fork (Randolph)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:elk-river-c-r",
+    "kind": "stream",
+    "name": "Elk River (C&R)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:gandy-creek",
+    "kind": "stream",
+    "name": "Gandy Creek",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:glady-fork",
+    "kind": "stream",
+    "name": "Glady Fork",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:laurel-fork-randolph",
+    "kind": "stream",
+    "name": "Laurel Fork (Randolph)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:left-fork-of-right-fork-buckhannon",
+    "kind": "stream",
+    "name": "Left Fork of Right Fork Buckhannon",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:middle-fork",
+    "kind": "stream",
+    "name": "Middle Fork",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:mill-creek-c-r",
+    "kind": "stream",
+    "name": "Mill Creek (C&R)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:otter-creek-and-tributaries-c-r",
+    "kind": "stream",
+    "name": "Otter Creek and tributaries (C&R)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-bemis",
+    "kind": "stream",
+    "name": "Shavers Fork (Bemis)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-lower-rr-section",
+    "kind": "stream",
+    "name": "Shavers Fork (Lower RR Section)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-lower-section",
+    "kind": "stream",
+    "name": "Shavers Fork (Lower Section)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-of-cheat-river-delayed-harvest",
+    "kind": "stream",
+    "name": "Shavers Fork of Cheat River (Delayed Harvest)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-upper-rr-section",
+    "kind": "stream",
+    "name": "Shavers Fork (Upper RR Section)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-upper-rr-section-above-lambert-run",
+    "kind": "stream",
+    "name": "Shavers Fork (Upper RR Section above Lambert Run)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:shavers-fork-upper-section",
+    "kind": "stream",
+    "name": "Shavers Fork (Upper Section)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:randolph:tygart-valley-river-headwaters",
+    "kind": "stream",
+    "name": "Tygart Valley River (Headwaters)",
+    "county": "Randolph"
+  },
+  {
+    "id": "stream:ritchie:north-bend-lake-tailwaters",
+    "kind": "stream",
+    "name": "North Bend Lake (Tailwaters)",
+    "county": "Ritchie"
+  },
+  {
+    "id": "stream:summers:bluestone-river-c-r",
+    "kind": "stream",
+    "name": "Bluestone River (C&R)",
+    "county": "Summers"
+  },
+  {
+    "id": "stream:summers:indian-creek-of-new-river",
+    "kind": "stream",
+    "name": "Indian Creek of New River",
+    "county": "Summers"
+  },
+  {
+    "id": "stream:summers:meadow-creek-summers",
+    "kind": "stream",
+    "name": "Meadow Creek (Summers)",
+    "county": "Summers"
+  },
+  {
+    "id": "stream:taylor:tygart-lake-tailwaters",
+    "kind": "stream",
+    "name": "Tygart Lake (Tailwaters)",
+    "county": "Taylor"
+  },
+  {
+    "id": "stream:tucker:blackwater-river",
+    "kind": "stream",
+    "name": "Blackwater River",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:blackwater-river-c-r",
+    "kind": "stream",
+    "name": "Blackwater River (C&R)",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:clover-run",
+    "kind": "stream",
+    "name": "Clover Run",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:dry-fork-tucker",
+    "kind": "stream",
+    "name": "Dry Fork (Tucker)",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:horseshoe-run",
+    "kind": "stream",
+    "name": "Horseshoe Run",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:red-creek-and-tributaries-c-r",
+    "kind": "stream",
+    "name": "Red Creek and tributaries (C&R)",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:tucker:red-run-of-dry-fork-fly-fishing-only",
+    "kind": "stream",
+    "name": "Red Run of Dry Fork (Fly Fishing Only)",
+    "county": "Tucker"
+  },
+  {
+    "id": "stream:upshur:buckhannon-river",
+    "kind": "stream",
+    "name": "Buckhannon River",
+    "county": "Upshur"
+  },
+  {
+    "id": "stream:upshur:left-fork-of-buckhannon-river",
+    "kind": "stream",
+    "name": "Left Fork of Buckhannon River",
+    "county": "Upshur"
+  },
+  {
+    "id": "stream:upshur:little-kanawha-river-headwaters",
+    "kind": "stream",
+    "name": "Little Kanawha River (Headwaters)",
+    "county": "Upshur"
+  },
+  {
+    "id": "stream:upshur:right-fork-of-buckhannon-river",
+    "kind": "stream",
+    "name": "Right Fork of Buckhannon River",
+    "county": "Upshur"
+  },
+  {
+    "id": "stream:upshur:right-fork-of-middle-fork",
+    "kind": "stream",
+    "name": "Right Fork of Middle Fork",
+    "county": "Upshur"
+  },
+  {
+    "id": "stream:wayne:beech-fork-lake-tailwaters",
+    "kind": "stream",
+    "name": "Beech Fork Lake (Tailwaters)",
+    "county": "Wayne"
+  },
+  {
+    "id": "stream:wayne:east-lynn-lake-tailwaters",
+    "kind": "stream",
+    "name": "East Lynn Lake (Tailwaters)",
+    "county": "Wayne"
+  },
+  {
+    "id": "stream:wayne:twelvepole-creek-wayne-dam",
+    "kind": "stream",
+    "name": "Twelvepole Creek (Wayne Dam)",
+    "county": "Wayne"
+  },
+  {
+    "id": "stream:wayne:west-fork-of-twelvepole-creek",
+    "kind": "stream",
+    "name": "West Fork of Twelvepole Creek",
+    "county": "Wayne"
+  },
+  {
+    "id": "stream:webster:back-fork-of-elk-river",
+    "kind": "stream",
+    "name": "Back Fork of Elk River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:back-fork-of-elk-river-c-r",
+    "kind": "stream",
+    "name": "Back Fork of Elk River (C&R)",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:cranberry-river",
+    "kind": "stream",
+    "name": "Cranberry River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:desert-fork",
+    "kind": "stream",
+    "name": "Desert Fork",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:elk-river",
+    "kind": "stream",
+    "name": "Elk River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:laurel-fork-webster",
+    "kind": "stream",
+    "name": "Laurel Fork (Webster)",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:left-fork-of-holly-river",
+    "kind": "stream",
+    "name": "Left Fork of Holly River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:right-fork-of-little-kanawha-river",
+    "kind": "stream",
+    "name": "Right Fork of Little Kanawha River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:sugar-creek",
+    "kind": "stream",
+    "name": "Sugar Creek",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:webster:williams-river",
+    "kind": "stream",
+    "name": "Williams River",
+    "county": "Webster"
+  },
+  {
+    "id": "stream:wetzel:north-fork-of-fishing-creek",
+    "kind": "stream",
+    "name": "North Fork of Fishing Creek",
+    "county": "Wetzel"
+  },
+  {
+    "id": "stream:wetzel:south-fork-of-fishing-creek",
+    "kind": "stream",
+    "name": "South Fork of Fishing Creek",
+    "county": "Wetzel"
+  },
+  {
+    "id": "stream:wyoming:barkers-creek",
+    "kind": "stream",
+    "name": "Barkers Creek",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:clear-fork-of-the-guyandotte-river-delayed-harvest",
+    "kind": "stream",
+    "name": "Clear Fork of the Guyandotte River (Delayed Harvest)",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:clear-fork-wyoming",
+    "kind": "stream",
+    "name": "Clear Fork (Wyoming)",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:guyandotte-river",
+    "kind": "stream",
+    "name": "Guyandotte River",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:guyandotte-river-c-r",
+    "kind": "stream",
+    "name": "Guyandotte River (C&R)",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:laurel-fork",
+    "kind": "stream",
+    "name": "Laurel Fork",
+    "county": "Wyoming"
+  },
+  {
+    "id": "stream:wyoming:pinnacle-creek",
+    "kind": "stream",
+    "name": "Pinnacle Creek",
+    "county": "Wyoming"
+  }
+]

@@ -1,0 +1,65 @@
+"""Format resolved stocking records as the app-facing JSON feed.
+
+Output shape is fixed by the iOS decoder (see plan + StockingEvent model).
+"""
+
+from __future__ import annotations
+
+import json
+from collections import Counter
+from datetime import datetime, timezone
+from pathlib import Path
+
+from parsers.sheet import ParsedEvent
+from resolve import ResolvedLocation, Resolver
+
+
+def build_feed(events: list[ParsedEvent], resolver: Resolver, source: str) -> tuple[dict, dict]:
+    """Return (stockings_payload, warnings_payload)."""
+    feed_events: list[dict] = []
+    unresolved_counter: Counter[str] = Counter()
+    unresolved_first_seen: dict[str, str] = {}
+
+    for event in events:
+        resolved_locations: list[ResolvedLocation] = []
+        for loc in event.locations:
+            resolved_locations.extend(resolver.resolve(loc))
+
+        feed_locations: list[dict] = []
+        for r in resolved_locations:
+            if r.id is not None:
+                feed_locations.append({"id": r.id, "type": r.type})
+            else:
+                feed_locations.append({"id": None, "raw_name": r.raw_name, "type": r.type})
+                key = r.raw_name.strip()
+                unresolved_counter[key] += 1
+                unresolved_first_seen.setdefault(key, event.date.isoformat())
+
+        feed_events.append({"date": event.date.isoformat(), "locations": feed_locations})
+
+    feed_events.sort(key=lambda e: e["date"], reverse=True)
+    now = datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+    stockings_payload = {
+        "generated_at": now,
+        "source": source,
+        "events": feed_events,
+    }
+
+    unresolved_entries = [
+        {
+            "raw_name": name,
+            "first_seen": unresolved_first_seen[name],
+            "occurrences": count,
+        }
+        for name, count in sorted(unresolved_counter.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+    warnings_payload = {"generated_at": now, "unresolved": unresolved_entries}
+
+    return stockings_payload, warnings_payload
+
+
+def write_payloads(stockings: dict, warnings: dict, out_dir: Path) -> None:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "stockings.json").write_text(json.dumps(stockings, indent=2) + "\n")
+    (out_dir / "warnings.json").write_text(json.dumps(warnings, indent=2) + "\n")

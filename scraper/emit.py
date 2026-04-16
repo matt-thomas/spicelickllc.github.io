@@ -27,11 +27,9 @@ def build_feed(events: list[ParsedEvent], resolver: Resolver, source: str) -> tu
 
         feed_locations: list[dict] = []
         for r in resolved_locations:
-            if r.id is not None:
-                feed_locations.append({"id": r.id, "type": r.type})
-            else:
-                feed_locations.append({"id": None, "raw_name": r.raw_name, "type": r.type})
-                key = r.raw_name.strip()
+            feed_locations.append({"id": r.id, "name": r.name, "type": r.type})
+            if r.id is None:
+                key = r.name.strip()
                 unresolved_counter[key] += 1
                 unresolved_first_seen.setdefault(key, event.date.isoformat())
 

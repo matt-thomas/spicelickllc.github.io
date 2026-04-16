@@ -78,7 +78,7 @@ class ResolverTests(unittest.TestCase):
         out = resolver.resolve(ParsedLocation(raw_name="Unknown Water", type=TROUT))
         self.assertEqual(len(out), 1)
         self.assertIsNone(out[0].id)
-        self.assertEqual(out[0].raw_name, "Unknown Water")
+        self.assertEqual(out[0].name, "Unknown Water")
 
     def test_cleaned_name_fallback_when_raw_has_type_suffix(self):
         """The alias table may hold the base name; if the raw includes 'Gold Rush'

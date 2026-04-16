@@ -88,7 +88,8 @@ def main() -> int:
         sheet_id = _require_env("SHEET_ID")
         api_key = _require_env("SHEETS_API_KEY")
         rows = fetch_sheet_rows(sheet_id, api_key)
-        source = f"google-sheet:{sheet_id}"
+        # Never include the Sheet ID in the published feed — it's a secret.
+        source = "google-sheet"
 
     today = date.fromisoformat(args.today) if args.today else None
     events = parse_rows(rows, year_window=args.year_window, today=today)

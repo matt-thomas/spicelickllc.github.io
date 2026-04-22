@@ -35,7 +35,7 @@ def _locations_by_date(feed: dict) -> dict[str, list[tuple]]:
         locs = tuple(
             (l.get("id") or l.get("raw_name"), l.get("type")) for l in event["locations"]
         )
-        result[event["date"]] = sorted(locs)
+        result[event["date"]] = sorted(locs, key=lambda t: (t[0] or "", t[1] or ""))
     return result
 
 

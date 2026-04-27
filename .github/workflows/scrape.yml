@@ -1,8 +1,9 @@
 name: Scrape WV trout stockings
 
-# Runs the scraper on a tight afternoon window and opens a PR if the resulting
-# wv-trout/stockings.json differs. Curation mode #3 (bot opens PR, human
-# merges) — after a stable season we can flip this to commit directly.
+# Runs the scraper on a tight afternoon window and opens (or appends a commit
+# to) a PR if the resulting wv-trout/stockings.json differs. Curation mode #3
+# (bot opens PR, human merges) — after a stable season we can flip this to
+# commit directly to main.
 
 on:
   schedule:
@@ -27,10 +28,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Prepare bot branch (rebased on main)
+        # Each scrape run that yields changes appends a new commit to
+        # bot/scrape-update so the PR shows full per-scrape history. Rebasing
+        # onto main first keeps the branch from drifting if main has moved
+        # (e.g., the previous PR was merged via squash without deleting the
+        # branch). Rebase fallback to a hard reset handles that squash-merge
+        # case where prior bot commits collide with the now-published changes.
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH=bot/scrape-update
+          git fetch origin main
+          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$BRANCH"
+            git checkout -B "$BRANCH" "origin/$BRANCH"
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git reset --hard origin/main
+            fi
+          else
+            git checkout -B "$BRANCH" origin/main
+          fi
 
       - name: Run scraper
         run: python3 scrape.py --out ../wv-trout
@@ -43,35 +70,39 @@ jobs:
         run: python3 -m unittest discover -s tests
         working-directory: scraper
 
-      - name: Detect changes
-        id: diff
+      - name: Commit changes
+        id: commit
         run: |
           if git diff --quiet -- wv-trout/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            {
-              echo "summary<<EOF"
-              python3 scraper/tools/diff_summary.py
-              echo "EOF"
-            } >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          SUMMARY=$(python3 scraper/tools/diff_summary.py)
+          git add wv-trout/stockings.json wv-trout/warnings.json
+          git commit -m "bot: update wv-trout/stockings.json" -m "$SUMMARY"
+          {
+            echo "summary<<SUMMARY_EOF"
+            printf '%s\n' "$SUMMARY"
+            echo "SUMMARY_EOF"
+          } >> "$GITHUB_OUTPUT"
 
-      - name: Open pull request
-        if: steps.diff.outputs.changed == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: bot/scrape-update
-          delete-branch: true
-          commit-message: 'bot: update wv-trout/stockings.json'
-          title: 'Bot: new stockings scraped'
-          body: |
-            Automated scrape of the WV DNR stocking Sheet.
+      - name: Push and ensure PR
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUMMARY: ${{ steps.commit.outputs.summary }}
+        run: |
+          BRANCH=bot/scrape-update
+          # force-with-lease covers the rebase-rewrote-history case; safe under
+          # the workflow's concurrency group since no parallel runs can race us.
+          git push --force-with-lease origin "$BRANCH"
 
-            ${{ steps.diff.outputs.summary }}
-
-            Review the diff, then merge to publish the feed at
-            `https://spice-lick.com/wv-trout/stockings.json`.
-          add-paths: |
-            wv-trout/stockings.json
-            wv-trout/warnings.json
+          if ! gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            PR_BODY=$(printf 'Automated scrape of the WV DNR stocking Sheet.\n\n%s\n\nReview the diff, then merge to publish the feed at `https://spice-lick.com/wv-trout/stockings.json`.\n' "$SUMMARY")
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "Bot: new stockings scraped" \
+              --body "$PR_BODY"
+          fi

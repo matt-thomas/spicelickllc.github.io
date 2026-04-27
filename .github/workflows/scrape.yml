@@ -81,10 +81,13 @@ jobs:
           SUMMARY=$(python3 scraper/tools/diff_summary.py)
           git add wv-trout/stockings.json wv-trout/warnings.json
           git commit -m "bot: update wv-trout/stockings.json" -m "$SUMMARY"
+          # Random delimiter so upstream Sheet content can't close the heredoc
+          # early and inject extra step outputs.
+          DELIM="SUMMARY_EOF_$(openssl rand -hex 16)"
           {
-            echo "summary<<SUMMARY_EOF"
+            echo "summary<<$DELIM"
             printf '%s\n' "$SUMMARY"
-            echo "SUMMARY_EOF"
+            echo "$DELIM"
           } >> "$GITHUB_OUTPUT"
 
       - name: Push and ensure PR

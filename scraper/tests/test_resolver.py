@@ -80,6 +80,28 @@ class ResolverTests(unittest.TestCase):
         self.assertIsNone(out[0].id)
         self.assertEqual(out[0].name, "Unknown Water")
 
+    def test_alias_with_display_overrides_emitted_name(self):
+        """Object-form aliases share an id with the canonical entry but emit
+        a distinct display name, so two stockings on the same polyline (e.g.
+        regular vs rail) stay visually distinct in the app."""
+        resolver = _make_resolver(
+            {
+                "buckhannon river": "Buckhannon River",
+                "buckhannon river (rail stocking)": {
+                    "canonical": "Buckhannon River",
+                    "display": "Buckhannon River (Rail Stocking)",
+                },
+            },
+            [{"id": "stream:upshur:buckhannon-river", "kind": "stream",
+              "name": "Buckhannon River", "county": "Upshur"}],
+        )
+        regular = resolver.resolve(ParsedLocation(raw_name="Buckhannon River", type=TROUT))
+        rail = resolver.resolve(ParsedLocation(raw_name="Buckhannon River (Rail Stocking)", type=TROUT))
+        self.assertEqual(regular[0].id, "stream:upshur:buckhannon-river")
+        self.assertEqual(rail[0].id, "stream:upshur:buckhannon-river")
+        self.assertEqual(regular[0].name, "Buckhannon River")
+        self.assertEqual(rail[0].name, "Buckhannon River (Rail Stocking)")
+
     def test_cleaned_name_fallback_when_raw_has_type_suffix(self):
         """The alias table may hold the base name; if the raw includes 'Gold Rush'
         but the alias doesn't, resolver falls back to cleaned name."""

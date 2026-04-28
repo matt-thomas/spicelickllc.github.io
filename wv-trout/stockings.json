@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-04-28T16:29:59Z",
+  "generated_at": "2026-04-28T17:18:35Z",
   "source": "google-sheet",
   "events": [
     {
       "date": "2026-04-27",
       "locations": [
         {
-          "id": null,
-          "name": "Greenbrier River Rail Stocking (downstream from Greenbrier River section below Durbin upstream of Greenbrier River Cass section)",
+          "id": "stream:pocahontas:greenbrier-river-rail",
+          "name": "Greenbrier River Rail",
           "type": "trout"
         }
       ]

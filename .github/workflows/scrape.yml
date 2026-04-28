@@ -101,7 +101,11 @@ jobs:
           # the workflow's concurrency group since no parallel runs can race us.
           git push --force-with-lease origin "$BRANCH"
 
-          if ! gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+          # Scope to OPEN PRs. `gh pr view "$BRANCH"` returns the most recent PR
+          # regardless of state, so it succeeds even when the previous PR was
+          # squash-merged — leaving the next bot push without a PR.
+          OPEN_COUNT=$(gh pr list --head "$BRANCH" --state open --json number --jq 'length')
+          if [ "$OPEN_COUNT" = "0" ]; then
             PR_BODY=$(printf 'Automated scrape of the WV DNR stocking Sheet.\n\n%s\n\nReview the diff, then merge to publish the feed at `https://spice-lick.com/wv-trout/stockings.json`.\n' "$SUMMARY")
             gh pr create \
               --base main \

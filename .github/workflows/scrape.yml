@@ -70,43 +70,43 @@ jobs:
         run: python3 -m unittest discover -s tests
         working-directory: scraper
 
-      - name: Commit changes
-        id: commit
-        run: |
-          if git diff --quiet -- wv-trout/; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-          SUMMARY=$(python3 scraper/tools/diff_summary.py)
-          git add wv-trout/stockings.json wv-trout/warnings.json
-          git commit -m "bot: update wv-trout/stockings.json" -m "$SUMMARY"
-          # Random delimiter so upstream Sheet content can't close the heredoc
-          # early and inject extra step outputs.
-          DELIM="SUMMARY_EOF_$(openssl rand -hex 16)"
-          {
-            echo "summary<<$DELIM"
-            printf '%s\n' "$SUMMARY"
-            echo "$DELIM"
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Push and ensure PR
-        if: steps.commit.outputs.changed == 'true'
+      - name: Commit, push, ensure PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SUMMARY: ${{ steps.commit.outputs.summary }}
         run: |
           BRANCH=bot/scrape-update
-          # force-with-lease covers the rebase-rewrote-history case; safe under
-          # the workflow's concurrency group since no parallel runs can race us.
+
+          # 1. Commit the run's scraper output if it differs from HEAD.
+          if ! git diff --quiet -- wv-trout/; then
+            SUMMARY=$(python3 scraper/tools/diff_summary.py)
+            git add wv-trout/stockings.json wv-trout/warnings.json
+            git commit -m "bot: update wv-trout/stockings.json" -m "$SUMMARY"
+          fi
+
+          # 2. If the bot branch's feed already matches main, there's nothing
+          # to publish — exit. Otherwise we need to push and ensure a PR
+          # exists, even when this run produced no new commit (e.g. the prior
+          # run's commit is still unmerged on bot/scrape-update).
+          if git diff --quiet origin/main -- wv-trout/; then
+            echo "Feed matches main — nothing to publish."
+            exit 0
+          fi
+
+          # 3. Push. force-with-lease covers the rebase-rewrote-history case;
+          # safe under the workflow's concurrency group since no parallel runs
+          # can race us.
           git push --force-with-lease origin "$BRANCH"
 
-          # Scope to OPEN PRs. `gh pr view "$BRANCH"` returns the most recent PR
-          # regardless of state, so it succeeds even when the previous PR was
-          # squash-merged — leaving the next bot push without a PR.
+          # 4. Open a PR if none is open. Scope to OPEN state — `gh pr view`
+          # would otherwise return the most recent PR regardless of state and
+          # falsely report "exists" after a squash-merge.
           OPEN_COUNT=$(gh pr list --head "$BRANCH" --state open --json number --jq 'length')
           if [ "$OPEN_COUNT" = "0" ]; then
-            PR_BODY=$(printf 'Automated scrape of the WV DNR stocking Sheet.\n\n%s\n\nReview the diff, then merge to publish the feed at `https://spice-lick.com/wv-trout/stockings.json`.\n' "$SUMMARY")
+            # Source the body from the latest bot commit. When this run made a
+            # new commit, that's this run's diff_summary; when it didn't, it's
+            # the prior run's summary, which still describes the unmerged delta.
+            LATEST_BODY=$(git log -1 --format='%b' HEAD)
+            PR_BODY=$(printf 'Automated scrape of the WV DNR stocking Sheet.\n\n%s\n\nReview the diff, then merge to publish the feed at `https://spice-lick.com/wv-trout/stockings.json`.\n' "$LATEST_BODY")
             gh pr create \
               --base main \
               --head "$BRANCH" \

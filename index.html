@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spice Lick LLC</title>
+    <title>Spice Lick LLC &middot; Software Consulting &amp; iOS App Development</title>
+    <meta name="description" content="Spice Lick LLC is a West Virginia software studio offering custom software consulting and iOS app development. Contact hello@spice-lick.com.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -24,19 +25,14 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            line-height: 1.7;
         }
 
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem 1.5rem;
-        }
-
-        .card {
-            max-width: 520px;
+        header {
+            max-width: 760px;
             width: 100%;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 1rem;
         }
 
         h1 {
@@ -54,37 +50,120 @@
             font-weight: 500;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
-        hr {
-            border: none;
+        nav.tabs {
             border-top: 1px solid var(--rule);
-            margin: 1.5rem 0;
+            border-bottom: 1px solid var(--rule);
+            display: flex;
+            gap: 0;
+            margin-top: 0.5rem;
         }
+
+        nav.tabs button {
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 1rem 1.25rem;
+            color: var(--muted);
+            border-bottom: 2px solid transparent;
+            margin-bottom: -1px;
+            transition: color 0.15s, border-color 0.15s;
+        }
+
+        nav.tabs button:hover { color: var(--ink); }
+
+        nav.tabs button.active {
+            color: var(--ink);
+            border-bottom-color: var(--accent);
+        }
+
+        main {
+            flex: 1;
+            max-width: 760px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-top: 2.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h2:first-child { margin-top: 0; }
 
         p {
             font-size: 1.05rem;
-            line-height: 1.7;
-            color: var(--ink);
+            margin-bottom: 1rem;
         }
 
-        .contact {
-            margin-top: 2rem;
-            font-size: 0.95rem;
-            color: var(--muted);
+        ul {
+            font-size: 1.05rem;
+            margin: 0 0 1rem 1.25rem;
         }
 
-        .contact a {
+        li { margin-bottom: 0.35rem; }
+
+        a {
             color: var(--accent);
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s;
         }
 
-        .contact a:hover {
-            border-bottom-color: var(--accent);
+        a:hover { border-bottom-color: var(--accent); }
+
+        .bio {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
         }
+
+        .bio-text { flex: 1; min-width: 0; }
+
+        .headshot {
+            width: 220px;
+            height: 220px;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: var(--rule);
+        }
+
+        .headshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right center;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .bio { flex-direction: column; align-items: stretch; gap: 1.5rem; }
+            .headshot { width: 180px; height: 180px; }
+            nav.tabs button { padding: 0.85rem 0.75rem; font-size: 0.9rem; }
+        }
+
+        .contact dl {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: 0.4rem 1rem;
+            font-size: 1.05rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact dt { color: var(--muted); font-weight: 500; }
 
         footer {
             padding: 1.5rem;
@@ -96,20 +175,155 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Spice Lick LLC</h1>
+        <div class="tagline">Software Consulting &amp; iOS App Development</div>
+        <nav class="tabs" role="tablist">
+            <button type="button" role="tab" data-tab="what" class="active">What we do</button>
+            <button type="button" role="tab" data-tab="who">Who we are</button>
+            <button type="button" role="tab" data-tab="contact">Contact us</button>
+        </nav>
+    </header>
+
     <main>
-        <div class="card">
-            <h1>Spice Lick LLC</h1>
-            <div class="tagline">Software Development &amp; Publishing</div>
-            <hr>
+        <section id="what" class="panel active" role="tabpanel">
+            <h2>Consulting services</h2>
             <p>
-                We build mobile applications and provide custom software development
-                services for businesses. Based in West Virginia.
+                We work with companies that need senior engineering help on
+                focused, well-scoped problems. Areas of specialty include:
+            </p>
+            <ul>
+                <li>Healthcare data integrations (FHIR, HL7) and SOC&nbsp;2 / HIPAA readiness</li>
+                <li>Machine-learning and OCR-driven document processing</li>
+                <li>Backend and API development in Python (Django/Flask), Ruby on Rails, and PHP/Drupal</li>
+                <li>Cloud infrastructure on AWS with Docker, Kubernetes, and Terraform</li>
+                <li>Code review, technical due diligence, and architecture review</li>
+                <li>Prototyping, proof-of-concept builds, and team augmentation</li>
+            </ul>
+
+            <h2>App development</h2>
+            <p>
+                We design and build native iOS applications, both under our own
+                label and for clients. Our first app, currently in development,
+                is <strong>West Virginia Fishing Map</strong> &mdash; an
+                interactive map of West Virginia trout and channel catfish
+                stocking events, sourced from the West Virginia Division of
+                Natural Resources&rsquo; published schedules. Preliminary
+                support and privacy information is available at
+                <a href="/wv-fish-map/support.html">/wv-fish-map/support.html</a>.
             </p>
 
-        </div>
+            <h2>Selected engagements</h2>
+            <p>
+                The engagements below are work Matt has performed personally,
+                prior to or independent of the LLC, and are listed to give a
+                sense of the experience he brings to client work:
+            </p>
+            <ul>
+                <li><strong><a href="https://scanslated.com">Scanslated, Inc.</a></strong> &mdash; technical lead for a healthcare communications platform; led SOC&nbsp;2 and HIPAA audits and FHIR/HL7 integrations.</li>
+                <li><strong><a href="https://qeepsake.com/">Qeepsake</a></strong> &mdash; contract engineer building GraphQL features in a Ruby on Rails / React stack on AWS and Heroku.</li>
+                <li><strong><a href="https://jacksonriver.com">Jackson River</a></strong> &mdash; software developer on Springboard, an open-source nonprofit fundraising platform, through its growth from startup to enterprise SaaS.</li>
+            </ul>
+        </section>
+
+        <section id="who" class="panel" role="tabpanel">
+            <div class="bio">
+                <div class="headshot">
+                    <img src="images/matt-thomas.jpg" alt="Matt Thomas">
+                </div>
+                <div class="bio-text">
+                    <h2>Matt Thomas, Founder</h2>
+                    <p>
+                        Spice Lick LLC was formed in 2026 by Matt Thomas to bring
+                        more than fifteen years of independent software work
+                        under a single brand. Matt is a senior full-stack
+                        engineer who has worked across healthcare technology,
+                        AI/ML, nonprofit fundraising, and consumer applications.
+                    </p>
+                    <p>
+                        Matt is technical cofounder of
+                        <a href="https://doclytics.ai">Doclytics</a>, an AI/ML-powered
+                        OCR and data-entry platform, where he built the MVP and
+                        continues to lead engineering. He previously served as
+                        technical lead at <a href="https://scanslated.com">Scanslated</a>,
+                        a healthcare communications company, where he led
+                        SOC&nbsp;2 and HIPAA audits and built FHIR/HL7
+                        integrations. Earlier in his career he spent seven years
+                        at <a href="https://jacksonriver.com">Jackson River</a>,
+                        helping it grow from an early-stage startup into an
+                        enterprise SaaS provider serving large nonprofits.
+                    </p>
+                    <p>
+                        Matt holds an M.S. in Information Science and a B.A. in
+                        English from the University of North Carolina at Chapel
+                        Hill. He is an Eagle Scout, an FAA-rated private pilot,
+                        and a former NOLS Wilderness EMT and ACA Level&nbsp;4
+                        Swiftwater Rescue Instructor. He lives and works in
+                        Summers County, West Virginia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="panel contact" role="tabpanel">
+            <h2>Contact us</h2>
+            <dl>
+                <dt>Email</dt>
+                <dd><a href="mailto:hello@spice-lick.com">hello@spice-lick.com</a></dd>
+                <dt>Web</dt>
+                <dd><a href="https://spice-lick.com">spice-lick.com</a></dd>
+                <dt>Location</dt>
+                <dd>Summers County, West Virginia, USA</dd>
+            </dl>
+            <p>
+                For new project inquiries, app support, or general questions,
+                email <a href="mailto:hello@spice-lick.com">hello@spice-lick.com</a>
+                and we&rsquo;ll respond within two business days.
+            </p>
+        </section>
     </main>
     <footer>
-        &copy; 2026 Spice Lick LLC &middot; West Virginia
+        &copy; 2026 Spice Lick LLC &middot; Summers County, West Virginia
     </footer>
+
+    <script>
+        (function () {
+            var tabs = document.querySelectorAll('nav.tabs button');
+            var panels = document.querySelectorAll('.panel');
+
+            function activate(name, updateHash) {
+                var found = false;
+                tabs.forEach(function (t) {
+                    var match = t.dataset.tab === name;
+                    t.classList.toggle('active', match);
+                    if (match) found = true;
+                });
+                panels.forEach(function (p) {
+                    p.classList.toggle('active', p.id === name);
+                });
+                if (found && updateHash) {
+                    history.replaceState(null, '', '#' + name);
+                }
+            }
+
+            tabs.forEach(function (t) {
+                t.addEventListener('click', function () {
+                    activate(t.dataset.tab, true);
+                });
+            });
+
+            var initial = (location.hash || '').replace('#', '');
+            if (initial && document.getElementById(initial)) {
+                activate(initial, false);
+            }
+
+            window.addEventListener('hashchange', function () {
+                var name = (location.hash || '').replace('#', '');
+                if (name && document.getElementById(name)) {
+                    activate(name, false);
+                }
+            });
+        })();
+    </script>
 </body>
 </html>

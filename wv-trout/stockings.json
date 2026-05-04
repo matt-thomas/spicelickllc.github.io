@@ -1,7 +1,87 @@
 {
-  "generated_at": "2026-05-01T20:01:46Z",
+  "generated_at": "2026-05-04T20:12:16Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-05-04",
+      "locations": [
+        {
+          "id": "stream:tucker:blackwater-river",
+          "name": "Blackwater River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:glady-fork",
+          "name": "Glady Fork",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-bemis",
+          "name": "Shavers Fork (Bemis)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-lower-section",
+          "name": "Shavers Fork (Lower Section)",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Shavers Fork Rail Stocking (High Falls to Delayed Harvest)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-upper-rr-section-above-lambert-run",
+          "name": "Shavers Fork (Upper RR Section above Lambert Run)",
+          "type": "trout"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-02",
+      "locations": [
+        {
+          "id": "lake:mcdowell:anawalt-lake",
+          "name": "Anawalt Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:greenbrier:anthony-creek",
+          "name": "Anthony Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pocahontas:knapps-creek",
+          "name": "Knapps Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:middle-creek",
+          "name": "Middle Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:mill-creek-berkeley",
+          "name": "Mill Creek (Berkeley)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:opequon-creek",
+          "name": "Opequon Creek",
+          "type": "trout"
+        },
+        {
+          "id": "lake:clay:wallback-lake",
+          "name": "Wallback Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:watoga-lake",
+          "name": "Watoga Lake",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-01",
       "locations": [

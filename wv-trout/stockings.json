@@ -1,7 +1,137 @@
 {
-  "generated_at": "2026-05-06T20:18:03Z",
+  "generated_at": "2026-05-07T20:10:37Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-05-07",
+      "locations": [
+        {
+          "id": "stream:greenbrier:big-clear-creek",
+          "name": "Big Clear Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:brooke:buffalo-creek-brooke",
+          "name": "Buffalo Creek (Brooke)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:brooke:castleman-run-lake",
+          "name": "Castleman Run Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mcdowell:clear-fork-mcdowell",
+          "name": "Clear Fork (McDowell)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:upshur:french-creek-lake",
+          "name": "French Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:gandy-creek",
+          "name": "Gandy Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:laurel-fork-randolph",
+          "name": "Laurel Fork (Randolph)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:laurel-fork-webster",
+          "name": "Laurel Fork (Webster)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:left-fork-of-holly-river",
+          "name": "Left Fork of Holly River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:greenbrier:little-clear-creek",
+          "name": "Little Clear Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:upshur:little-kanawha-river-headwaters",
+          "name": "Little Kanawha River (Headwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:monongalia:mason-lake",
+          "name": "Mason Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:ohio:middle-wheeling-creek-lake",
+          "name": "Middle Wheeling Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:north-fork-of-south-branch",
+          "name": "North Fork of South Branch",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:opequon-creek",
+          "name": "Opequon Creek",
+          "type": "trout"
+        },
+        {
+          "id": "lake:berkeley:poorhouse-pond",
+          "name": "Poorhouse Pond",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mingo:r-d-bailey-lake-tailwaters",
+          "name": "R.D. Bailey Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:rocky-marsh-run",
+          "name": "Rocky Marsh Run",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-upper-section",
+          "name": "Shavers Fork (Upper Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-of-the-potomac-river-c-r",
+          "name": "South Branch of the Potomac River (C&R)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-smoke-hole-section",
+          "name": "South Branch (Smoke Hole Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:tilhance-creek",
+          "name": "Tilhance Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:berkeley:tuscarora-creek",
+          "name": "Tuscarora Creek",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Upper Cacapon Park Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:williams-river",
+          "name": "Williams River",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-06",
       "locations": [

@@ -1,7 +1,97 @@
 {
-  "generated_at": "2026-05-07T20:10:37Z",
+  "generated_at": "2026-05-08T20:05:06Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-05-08",
+      "locations": [
+        {
+          "id": "stream:braxton:burnsville-lake-tailwaters",
+          "name": "Burnsville Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mercer:camp-creek",
+          "name": "Camp Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:cranberry-river",
+          "name": "Cranberry River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:dry-fork-randolph",
+          "name": "Dry Fork (Randolph)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:tucker:dry-fork-tucker",
+          "name": "Dry Fork (Tucker)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mercer:east-river-of-new-river",
+          "name": "East River of New River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mercer:mash-fork",
+          "name": "Mash Fork",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mercer:mash-fork-children-and-class-q",
+          "name": "Mash Fork (Children and Class Q)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:greenbrier:north-fork-of-cherry-river",
+          "name": "North Fork of Cherry River",
+          "type": "trout"
+        },
+        {
+          "id": "lake:hardy:rock-cliff-lake",
+          "name": "Rock Cliff Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-franklin-section",
+          "name": "South Branch (Franklin Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:greenbrier:south-fork-of-cherry-river",
+          "name": "South Fork of Cherry River",
+          "type": "trout"
+        },
+        {
+          "id": "lake:grant:south-mill-creek-lake",
+          "name": "South Mill Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:lewis:stonewall-jackson-lake-tailwaters",
+          "name": "Stonewall Jackson Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:braxton:sutton-lake-tailwaters",
+          "name": "Sutton Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:hardy:trout-run",
+          "name": "Trout Run",
+          "type": "trout"
+        },
+        {
+          "id": "stream:hardy:waites-run",
+          "name": "Waites Run",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-07",
       "locations": [

@@ -1,14 +1,44 @@
 {
-  "generated_at": "2026-05-04T20:12:16Z",
+  "generated_at": "2026-05-19T20:27:32Z",
   "unresolved": [
+    {
+      "raw_name": "Glade of Mann",
+      "first_seen": "2026-05-19",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Greenbrier River (Cass section)",
+      "first_seen": "2026-05-19",
+      "occurrences": 1
+    },
     {
       "raw_name": "Horse Creek",
       "first_seen": "2026-05-01",
       "occurrences": 1
     },
     {
+      "raw_name": "Laurel Creek of New River",
+      "first_seen": "2026-05-19",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Mill Creek of New River",
+      "first_seen": "2026-05-19",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Shavers Fork Rail Stocking (Delayed Harvest to Upper Shavers)",
+      "first_seen": "2026-05-05",
+      "occurrences": 1
+    },
+    {
       "raw_name": "Shavers Fork Rail Stocking (High Falls to Delayed Harvest)",
       "first_seen": "2026-05-04",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Upper Cacapon Park Lake",
+      "first_seen": "2026-05-07",
       "occurrences": 1
     }
   ]

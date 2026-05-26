@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T20:20:26Z",
+  "generated_at": "2026-05-26T19:11:23Z",
   "source": "google-sheet",
   "events": [
     {
@@ -311,23 +311,23 @@
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Glade of Mann",
+          "id": "stream:fayette:glade-creek-babcock",
+          "name": "Glade Creek (Babcock)",
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Greenbrier River (Cass section)",
+          "id": "stream:pocahontas:greenbrier-river-cass",
+          "name": "Greenbrier River (Cass)",
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Laurel Creek of New River",
+          "id": "stream:fayette:laurel-creek-fayette",
+          "name": "Laurel Creek (Fayette)",
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Mill Creek of New River",
+          "id": "stream:fayette:mill-creek-fayette",
+          "name": "Mill Creek (Fayette)",
           "type": "trout"
         },
         {
@@ -986,8 +986,8 @@
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Upper Cacapon Park Lake",
+          "id": "lake:morgan:cacapon-state-park-lakes",
+          "name": "Cacapon State Park Lakes",
           "type": "trout"
         },
         {
@@ -1146,8 +1146,8 @@
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Shavers Fork Rail Stocking (Delayed Harvest to Upper Shavers)",
+          "id": "stream:randolph:shavers-fork-upper-rr-section",
+          "name": "Shavers Fork (Upper RR Section)",
           "type": "trout"
         },
         {
@@ -1181,8 +1181,8 @@
           "type": "trout"
         },
         {
-          "id": null,
-          "name": "Shavers Fork Rail Stocking (High Falls to Delayed Harvest)",
+          "id": "stream:randolph:shavers-fork-upper-rr-section",
+          "name": "Shavers Fork (Upper RR Section)",
           "type": "trout"
         },
         {
@@ -1241,8 +1241,8 @@
       "date": "2026-05-01",
       "locations": [
         {
-          "id": null,
-          "name": "Horse Creek",
+          "id": "lake:wyoming:horse-creek-lake",
+          "name": "Horse Creek Lake",
           "type": "trout"
         },
         {

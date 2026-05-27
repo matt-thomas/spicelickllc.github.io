@@ -1,7 +1,57 @@
 {
-  "generated_at": "2026-05-26T20:51:26Z",
+  "generated_at": "2026-05-27T20:58:29Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-05-27",
+      "locations": [
+        {
+          "id": "stream:logan:buffalo-creek-logan",
+          "name": "Buffalo Creek (Logan)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:elk-river",
+          "name": "Elk River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:monroe:potts-creek",
+          "name": "Potts Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:preston:rhine-creek",
+          "name": "Rhine Creek",
+          "type": "trout"
+        },
+        {
+          "id": "lake:hardy:rock-cliff-lake",
+          "name": "Rock Cliff Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-upper-section",
+          "name": "Shavers Fork (Upper Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-franklin-section",
+          "name": "South Branch (Franklin Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:hardy:trout-run",
+          "name": "Trout Run",
+          "type": "trout"
+        },
+        {
+          "id": "stream:hardy:waites-run",
+          "name": "Waites Run",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-26",
       "locations": [

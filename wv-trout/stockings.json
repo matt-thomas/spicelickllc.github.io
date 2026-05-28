@@ -1,7 +1,57 @@
 {
-  "generated_at": "2026-05-27T20:58:29Z",
+  "generated_at": "2026-05-28T21:04:57Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-05-28",
+      "locations": [
+        {
+          "id": "stream:greenbrier:anthony-creek",
+          "name": "Anthony Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:cranberry-river",
+          "name": "Cranberry River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:gandy-creek",
+          "name": "Gandy Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pocahontas:knapps-creek",
+          "name": "Knapps Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:laurel-fork-randolph",
+          "name": "Laurel Fork (Randolph)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:logan:rockhouse-lake",
+          "name": "Rockhouse Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-smoke-hole-section",
+          "name": "South Branch (Smoke Hole Section)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:randolph:spruce-knob-lake",
+          "name": "Spruce Knob Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:boone:spruce-laurel-fork",
+          "name": "Spruce Laurel Fork",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-27",
       "locations": [

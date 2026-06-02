@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-05-29T21:05:29Z",
+  "generated_at": "2026-06-02T23:45:17Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-06-02",
+      "locations": [
+        {
+          "id": "stream:mercer:east-river-of-new-river",
+          "name": "East River of New River",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-05-29",
       "locations": [

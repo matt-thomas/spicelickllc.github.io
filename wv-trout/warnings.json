@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-23T20:58:25Z",
+  "generated_at": "2026-06-24T20:44:26Z",
   "unresolved": [
     {
       "raw_name": "CATFISH STOCKINGS",
-      "first_seen": "2026-06-23",
-      "occurrences": 2
+      "first_seen": "2026-06-24",
+      "occurrences": 3
     },
     {
       "raw_name": "Chief Logan State Park Pond",
@@ -12,8 +12,18 @@
       "occurrences": 1
     },
     {
+      "raw_name": "Edwards Run Ponds",
+      "first_seen": "2026-06-24",
+      "occurrences": 1
+    },
+    {
       "raw_name": "Fayette County Park Lake",
       "first_seen": "2026-06-22",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Fort Ashby Lake",
+      "first_seen": "2026-06-24",
       "occurrences": 1
     },
     {
@@ -24,6 +34,11 @@
     {
       "raw_name": "Poorhouse Lake",
       "first_seen": "2026-06-23",
+      "occurrences": 1
+    },
+    {
+      "raw_name": "Sleepy Creek Lake",
+      "first_seen": "2026-06-24",
       "occurrences": 1
     },
     {

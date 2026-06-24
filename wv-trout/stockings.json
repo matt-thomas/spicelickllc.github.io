@@ -1,7 +1,77 @@
 {
-  "generated_at": "2026-06-23T20:58:25Z",
+  "generated_at": "2026-06-24T20:44:26Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-06-24",
+      "locations": [
+        {
+          "id": null,
+          "name": "CATFISH STOCKINGS",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Edwards Run Ponds",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Fort Ashby Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:handley-pond",
+          "name": "Handley Pond",
+          "type": "trout"
+        },
+        {
+          "id": "lake:wyoming:horse-creek-lake",
+          "name": "Horse Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:tucker:pendleton-lake",
+          "name": "Pendleton Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:mason:krodel-lake",
+          "name": "Krodel Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:raleigh:raleigh-county-airport-pond",
+          "name": "Raleigh County Airport Pond",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:seneca-lake",
+          "name": "Seneca Lake",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Sleepy Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:barbour:teter-creek-lake",
+          "name": "Teter Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:greenbrier:tuckahoe-lake",
+          "name": "Tuckahoe Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:watoga-lake",
+          "name": "Watoga Lake",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-06-23",
       "locations": [

@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-06-24T20:44:26Z",
+  "generated_at": "2026-06-25T20:52:30Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-06-24",
+      "locations": [
+        {
+          "id": null,
+          "name": "CATFISH STOCKINGS",
+          "type": "trout"
+        },
+        {
+          "id": "lake:monongalia:coopers-rock-lake",
+          "name": "Coopers Rock Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:marion:curtisville-lake",
+          "name": "Curtisville Lake",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-06-24",
       "locations": [

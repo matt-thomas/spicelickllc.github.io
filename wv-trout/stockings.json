@@ -1,9 +1,44 @@
 {
-  "generated_at": "2026-06-25T20:52:30Z",
+  "generated_at": "2026-06-26T20:42:49Z",
   "source": "google-sheet",
   "events": [
     {
-      "date": "2026-06-24",
+      "date": "2026-06-26",
+      "locations": [
+        {
+          "id": null,
+          "name": "CATFISH STOCKINGS",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Cedar Creek State Park Pond",
+          "type": "trout"
+        },
+        {
+          "id": "lake:tyler:conaway-run-lake",
+          "name": "Conaway Run Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:wood:mountwood-lake",
+          "name": "Mountwood Lake",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "North Bend State Park Pond",
+          "type": "trout"
+        },
+        {
+          "id": "lake:jackson:rollins-lake",
+          "name": "Rollins Lake",
+          "type": "trout"
+        }
+      ]
+    },
+    {
+      "date": "2026-06-25",
       "locations": [
         {
           "id": null,

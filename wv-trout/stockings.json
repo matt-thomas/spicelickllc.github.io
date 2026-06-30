@@ -1,7 +1,32 @@
 {
-  "generated_at": "2026-06-26T20:42:49Z",
+  "generated_at": "2026-06-30T20:54:56Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-06-30",
+      "locations": [
+        {
+          "id": null,
+          "name": "CATFISH STOCKINGS",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Moncove Lake",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Fayette County Park Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:raleigh:raleigh-county-airport-pond",
+          "name": "Raleigh County Airport Pond",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-06-26",
       "locations": [

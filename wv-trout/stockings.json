@@ -1,7 +1,52 @@
 {
-  "generated_at": "2026-06-30T20:54:56Z",
+  "generated_at": "2026-07-01T20:46:10Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-07-01",
+      "locations": [
+        {
+          "id": null,
+          "name": "CATFISH STOCKINGS",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Camp Pioneer Pond",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "Elk 2 Mile Ponds",
+          "type": "trout"
+        },
+        {
+          "id": "lake:upshur:french-creek-lake",
+          "name": "French Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:mason:krodel-lake",
+          "name": "Krodel Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:logan:rockhouse-lake",
+          "name": "Rockhouse Lake",
+          "type": "trout"
+        },
+        {
+          "id": "lake:clay:wallback-lake",
+          "name": "Wallback Lake",
+          "type": "trout"
+        },
+        {
+          "id": null,
+          "name": "This concludes the catfish stocking for 2026",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-06-30",
       "locations": [

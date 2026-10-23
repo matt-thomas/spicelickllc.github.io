@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:00:14Z",
+  "generated_at": "2026-10-23T21:15:15Z",
   "source": "google-sheet",
   "events": [
     {
@@ -246,8 +246,13 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "Elk 2 Mile Ponds",
+          "id": "lake:kanawha:elk-twomile-creek-site-12",
+          "name": "Elk Twomile Creek (Site 12)",
+          "type": "catfish"
+        },
+        {
+          "id": "lake:kanawha:elk-twomile-creek-site-13",
+          "name": "Elk Twomile Creek (Site 13)",
           "type": "catfish"
         },
         {
@@ -269,11 +274,6 @@
           "id": "lake:clay:wallback-lake",
           "name": "Wallback Lake",
           "type": "catfish"
-        },
-        {
-          "id": null,
-          "name": "This concludes the  for 2026",
-          "type": "catfish"
         }
       ]
     },
@@ -281,7 +281,7 @@
       "date": "2026-06-30",
       "locations": [
         {
-          "id": null,
+          "id": "lake:monroe:moncove-lake",
           "name": "Moncove Lake",
           "type": "catfish"
         },
@@ -301,8 +301,8 @@
       "date": "2026-06-26",
       "locations": [
         {
-          "id": null,
-          "name": "Cedar Creek State Park Pond",
+          "id": "lake:gilmer:cedar-creek-lake",
+          "name": "Cedar Creek Lake",
           "type": "catfish"
         },
         {
@@ -316,8 +316,8 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "North Bend State Park Pond",
+          "id": "lake:ritchie:north-bend-sp-pond",
+          "name": "North Bend SP Pond",
           "type": "catfish"
         },
         {
@@ -346,12 +346,12 @@
       "date": "2026-06-24",
       "locations": [
         {
-          "id": null,
-          "name": "Edwards Run Ponds",
+          "id": "lake:hampshire:edwards-run-lake",
+          "name": "Edwards Run Lake",
           "type": "catfish"
         },
         {
-          "id": null,
+          "id": "lake:mineral:fort-ashby-lake",
           "name": "Fort Ashby Lake",
           "type": "catfish"
         },
@@ -386,7 +386,7 @@
           "type": "catfish"
         },
         {
-          "id": null,
+          "id": "lake:berkeley:sleepy-creek-lake",
           "name": "Sleepy Creek Lake",
           "type": "catfish"
         },
@@ -441,8 +441,8 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "Chief Logan State Park Pond",
+          "id": "lake:logan:chief-logan-lake",
+          "name": "Chief Logan Lake",
           "type": "catfish"
         },
         {
@@ -501,8 +501,8 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "Poorhouse Lake",
+          "id": "lake:berkeley:poorhouse-pond",
+          "name": "Poorhouse Pond",
           "type": "catfish"
         },
         {
@@ -581,7 +581,7 @@
           "type": "catfish"
         },
         {
-          "id": null,
+          "id": "lake:wayne:millers-fork-pond",
           "name": "Millers Fork Pond",
           "type": "catfish"
         },
@@ -595,11 +595,6 @@
     {
       "date": "2026-06-02",
       "locations": [
-        {
-          "id": null,
-          "name": "Today's stockings will conclude the 2026 Spring Stocking Season",
-          "type": "trout"
-        },
         {
           "id": "stream:mercer:east-river-of-new-river",
           "name": "East River of New River",

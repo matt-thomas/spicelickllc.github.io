@@ -51,6 +51,16 @@ class SheetParserTests(unittest.TestCase):
         self.assertEqual(events[0].locations[0].raw_name, "Buffalo Fork Lake")
         self.assertEqual(events[0].locations[0].type, CATFISH)
 
+    def test_catfish_header_without_channel_prefix(self):
+        """The 2026 sheet shortened the header to ``CATFISH STOCKINGS``; it must
+        still switch the section type rather than publish as a location."""
+        events = _parse([["6/22/2026", "CATFISH STOCKINGS\nKrodel Lake\nSeneca Lake"]])
+        self.assertEqual(
+            [loc.raw_name for loc in events[0].locations],
+            ["Krodel Lake", "Seneca Lake"],
+        )
+        self.assertTrue(all(loc.type == CATFISH for loc in events[0].locations))
+
     def test_no_stocking_and_no_waters_rows_are_dropped(self):
         events = _parse([
             ["4/12/2026", "No stocking"],

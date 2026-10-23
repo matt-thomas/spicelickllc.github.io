@@ -28,12 +28,13 @@ _TYPE_SUFFIXES: tuple[tuple[str, StockingType], ...] = (
 
 _SECTION_HEADERS: tuple[tuple[re.Pattern[str], StockingType], ...] = (
     (re.compile(r"\bGOLD RUSH STOCKINGS?\b", re.IGNORECASE), GOLD_RUSH),
-    (re.compile(r"\bCHANNEL CATFISH STOCKINGS?\b", re.IGNORECASE), CATFISH),
+    # 2025 sheet used "CHANNEL CATFISH STOCKINGS"; 2026 dropped "CHANNEL".
+    (re.compile(r"\b(?:CHANNEL\s+)?CATFISH STOCKINGS?\b", re.IGNORECASE), CATFISH),
     (re.compile(r"\bTROUT STOCKINGS?\b", re.IGNORECASE), TROUT),
 )
 
 _HEADER_ONLY_LINE = re.compile(
-    r"^\s*(?:TROUT|GOLD RUSH|CHANNEL CATFISH)\s+STOCKINGS?\s*:?\s*$",
+    r"^\s*(?:TROUT|GOLD RUSH|(?:CHANNEL\s+)?CATFISH)\s+STOCKINGS?\s*:?\s*$",
     re.IGNORECASE,
 )
 

@@ -16,6 +16,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
@@ -27,6 +28,16 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
+      - name: Keep schedule alive
+        # GitHub disables scheduled workflows in public repos after 60 days
+        # without repo activity. The off-season (July → mid-October) has no
+        # stockings and therefore no commits, which is exactly how this got
+        # disabled on 2026-08-31 and missed the start of Fall 2026. Calling the
+        # enable endpoint on every run resets that inactivity timer.
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/scrape.yml/enable"
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0

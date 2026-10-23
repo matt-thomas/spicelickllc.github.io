@@ -44,6 +44,11 @@ _NON_LOCATION_HEADERS = (
     "WEEKLY STOCKING",
 )
 
+# Season-wrap notices DNR appends to the last day's cell, e.g. "This concludes
+# the catfish stocking for 2026". Checked before inline-header extraction so the
+# embedded "catfish stocking" isn't mistaken for a section header.
+_NOTICE_LINE = re.compile(r"\bconclud(?:e|es|ed)\b", re.IGNORECASE)
+
 
 @dataclass(frozen=True)
 class ParsedLocation:
@@ -150,6 +155,9 @@ def parse_rows(
                     if pattern.search(line):
                         current_type = stype
                         break
+                continue
+
+            if _NOTICE_LINE.search(line):
                 continue
 
             inline_type, inline_name = _extract_inline_header(line)

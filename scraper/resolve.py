@@ -14,6 +14,10 @@ to share an id with another entry but stay visually distinct in the app
 polyline upstream, two separate stockings on the sheet), the value can be
 ``{"canonical": "...", "display": "..."}``: the canonical drives the id
 lookup, the display becomes the emitted ``name``.
+
+When one sheet entry covers several distinct waterbodies (e.g. "Elk 2 Mile
+Ponds" → Elk Twomile Creek Sites 12 and 13), the value can be a list of
+either form; the raw name fans out to every target's IDs.
 """
 
 from __future__ import annotations
@@ -42,7 +46,7 @@ class _AliasTarget:
 class Resolver:
     def __init__(
         self,
-        aliases: dict[str, _AliasTarget],
+        aliases: dict[str, list[_AliasTarget]],
         name_to_ids: dict[str, list[str]],
         id_to_name: dict[str, str],
     ) -> None:
@@ -54,7 +58,7 @@ class Resolver:
     def from_files(cls, aliases_path: Path, waterbodies_path: Path) -> "Resolver":
         aliases_raw = json.loads(aliases_path.read_text())
         aliases = {
-            k.lower().strip(): _parse_alias_target(v) for k, v in aliases_raw.items()
+            k.lower().strip(): _parse_alias_targets(v) for k, v in aliases_raw.items()
         }
         catalog = json.loads(waterbodies_path.read_text())
         name_to_ids: dict[str, list[str]] = {}
@@ -65,31 +69,31 @@ class Resolver:
         return cls(aliases, name_to_ids, id_to_name)
 
     def resolve(self, location: ParsedLocation) -> list[ResolvedLocation]:
-        target = self._lookup_alias_target(location.raw_name)
-        if target is None:
-            return [ResolvedLocation(id=None, name=location.raw_name, type=location.type)]
-
-        ids = self._name_to_ids.get(target.canonical, [])
-        if not ids:
-            return [ResolvedLocation(id=None, name=location.raw_name, type=location.type)]
-
-        return [
+        resolved = [
             ResolvedLocation(
                 id=fid,
                 name=target.display if target.display is not None else self._id_to_name[fid],
                 type=location.type,
             )
-            for fid in ids
+            for target in self._lookup_alias_targets(location.raw_name)
+            for fid in self._name_to_ids.get(target.canonical, [])
         ]
+        return resolved or [ResolvedLocation(id=None, name=location.raw_name, type=location.type)]
 
-    def _lookup_alias_target(self, raw: str) -> Optional[_AliasTarget]:
+    def _lookup_alias_targets(self, raw: str) -> list[_AliasTarget]:
         key = raw.lower().strip()
         if key in self._aliases:
             return self._aliases[key]
         cleaned = clean_name(raw).lower().strip()
         if cleaned and cleaned != key and cleaned in self._aliases:
             return self._aliases[cleaned]
-        return None
+        return []
+
+
+def _parse_alias_targets(value: object) -> list[_AliasTarget]:
+    if isinstance(value, list):
+        return [_parse_alias_target(v) for v in value]
+    return [_parse_alias_target(value)]
 
 
 def _parse_alias_target(value: object) -> _AliasTarget:

@@ -61,6 +61,16 @@ class SheetParserTests(unittest.TestCase):
         )
         self.assertTrue(all(loc.type == CATFISH for loc in events[0].locations))
 
+    def test_season_wrap_notices_are_not_locations(self):
+        events = _parse([
+            ["5/29/2026", "Berwind Lake\nToday's stockings will conclude the 2026 Spring Stocking Season."],
+            ["7/1/2026", "CATFISH STOCKINGS\nKrodel Lake\nThis concludes the catfish stocking for 2026"],
+        ])
+        self.assertEqual(
+            [(loc.raw_name, loc.type) for e in events for loc in e.locations],
+            [("Berwind Lake", TROUT), ("Krodel Lake", CATFISH)],
+        )
+
     def test_no_stocking_and_no_waters_rows_are_dropped(self):
         events = _parse([
             ["4/12/2026", "No stocking"],

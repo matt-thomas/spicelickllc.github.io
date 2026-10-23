@@ -11,7 +11,7 @@ from pathlib import Path
 SCRAPER_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(SCRAPER_ROOT))
 
-from parsers.sheet import GOLD_RUSH, TROUT, ParsedLocation
+from parsers.sheet import CATFISH, GOLD_RUSH, TROUT, ParsedLocation
 from resolve import Resolver
 
 
@@ -101,6 +101,28 @@ class ResolverTests(unittest.TestCase):
         self.assertEqual(rail[0].id, "stream:upshur:buckhannon-river")
         self.assertEqual(regular[0].name, "Buckhannon River")
         self.assertEqual(rail[0].name, "Buckhannon River (Rail Stocking)")
+
+    def test_list_alias_fans_out_to_every_target(self):
+        """A list-valued alias covers one sheet entry that names several
+        distinct waterbodies (e.g. "Elk 2 Mile Ponds" → Sites 12 and 13)."""
+        resolver = _make_resolver(
+            {"elk 2 mile ponds": ["Elk Twomile Creek (Site 12)", "Elk Twomile Creek (Site 13)"]},
+            [
+                {"id": "lake:kanawha:elk-twomile-creek-site-12", "kind": "lake",
+                 "name": "Elk Twomile Creek (Site 12)", "county": "Kanawha"},
+                {"id": "lake:kanawha:elk-twomile-creek-site-13", "kind": "lake",
+                 "name": "Elk Twomile Creek (Site 13)", "county": "Kanawha"},
+            ],
+        )
+        out = resolver.resolve(ParsedLocation(raw_name="Elk 2 Mile Ponds", type=CATFISH))
+        self.assertEqual(
+            [(r.id, r.name) for r in out],
+            [
+                ("lake:kanawha:elk-twomile-creek-site-12", "Elk Twomile Creek (Site 12)"),
+                ("lake:kanawha:elk-twomile-creek-site-13", "Elk Twomile Creek (Site 13)"),
+            ],
+        )
+        self.assertTrue(all(r.type == CATFISH for r in out))
 
     def test_cleaned_name_fallback_when_raw_has_type_suffix(self):
         """The alias table may hold the base name; if the raw includes 'Gold Rush'

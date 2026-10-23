@@ -72,6 +72,12 @@
     "county": "Fayette"
   },
   {
+    "id": "lake:fayette:fayette-county-park-ponds",
+    "kind": "lake",
+    "name": "Fayette County Park Ponds",
+    "county": "Fayette"
+  },
+  {
     "id": "lake:fayette:hawks-nest-state-park-lake",
     "kind": "lake",
     "name": "Hawks Nest State Park Lake",
@@ -616,6 +622,12 @@
     "kind": "lake",
     "name": "Stephens Lake",
     "county": "Raleigh"
+  },
+  {
+    "id": "lake:randolph:camp-pioneer-ponds",
+    "kind": "lake",
+    "name": "Camp Pioneer Ponds",
+    "county": "Randolph"
   },
   {
     "id": "lake:randolph:elkwater-fork-lake",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:15:15Z",
+  "generated_at": "2026-10-24T00:00:00Z",
   "source": "google-sheet",
   "events": [
     {
@@ -241,8 +241,8 @@
       "date": "2026-07-01",
       "locations": [
         {
-          "id": null,
-          "name": "Camp Pioneer Pond",
+          "id": "lake:randolph:camp-pioneer-ponds",
+          "name": "Camp Pioneer Ponds",
           "type": "catfish"
         },
         {
@@ -286,8 +286,8 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "Fayette County Park Lake",
+          "id": "lake:fayette:fayette-county-park-ponds",
+          "name": "Fayette County Park Ponds",
           "type": "catfish"
         },
         {
@@ -551,8 +551,8 @@
           "type": "catfish"
         },
         {
-          "id": null,
-          "name": "Fayette County Park Lake",
+          "id": "lake:fayette:fayette-county-park-ponds",
+          "name": "Fayette County Park Ponds",
           "type": "catfish"
         },
         {

@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-10-24T00:00:00Z",
+  "generated_at": "2026-10-26T22:56:41Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-10-26",
+      "locations": [
+        {
+          "id": "lake:monongalia:coopers-rock-lake",
+          "name": "Coopers Rock Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:taylor:tygart-lake-tailwaters",
+          "name": "Tygart Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pocahontas:west-fork-of-greenbrier-river",
+          "name": "West Fork of Greenbrier River",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-10-23",
       "locations": [

@@ -1,7 +1,77 @@
 {
-  "generated_at": "2026-10-26T22:56:41Z",
+  "generated_at": "2026-10-27T22:45:34Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-10-27",
+      "locations": [
+        {
+          "id": "stream:greenbrier:anthony-creek",
+          "name": "Anthony Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:tucker:blackwater-river",
+          "name": "Blackwater River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:elk-river",
+          "name": "Elk River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pocahontas:knapps-creek",
+          "name": "Knapps Creek",
+          "type": "trout"
+        },
+        {
+          "id": "lake:tucker:pendleton-lake",
+          "name": "Pendleton Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:wyoming:pinnacle-creek",
+          "name": "Pinnacle Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:boone:pond-fork",
+          "name": "Pond Fork",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:seneca-lake",
+          "name": "Seneca Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:shavers-fork-upper-section",
+          "name": "Shavers Fork (Upper Section)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:randolph:spruce-knob-lake",
+          "name": "Spruce Knob Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:wyoming:guyandotte-river",
+          "name": "Guyandotte River",
+          "type": "trout"
+        },
+        {
+          "id": "lake:pocahontas:watoga-lake",
+          "name": "Watoga Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:marshall:wheeling-creek",
+          "name": "Wheeling Creek",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "locations": [

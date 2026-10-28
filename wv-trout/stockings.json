@@ -1,7 +1,77 @@
 {
-  "generated_at": "2026-10-27T22:45:34Z",
+  "generated_at": "2026-10-28T19:58:21Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-10-28",
+      "locations": [
+        {
+          "id": "stream:upshur:buckhannon-river",
+          "name": "Buckhannon River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:cranberry-river",
+          "name": "Cranberry River",
+          "type": "trout"
+        },
+        {
+          "id": "stream:hardy:lost-river",
+          "name": "Lost River",
+          "type": "trout"
+        },
+        {
+          "id": "lake:grant:new-creek-dam-14",
+          "name": "New Creek Dam 14",
+          "type": "trout"
+        },
+        {
+          "id": "lake:summers:pipestem-lake",
+          "name": "Pipestem Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mingo:r-d-bailey-lake-tailwaters",
+          "name": "R.D. Bailey Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:hardy:rock-cliff-lake",
+          "name": "Rock Cliff Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-franklin-section",
+          "name": "South Branch (Franklin Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:pendleton:south-branch-smoke-hole-section",
+          "name": "South Branch (Smoke Hole Section)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:nicholas:summersville-lake-tailwaters",
+          "name": "Summersville Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "lake:greenbrier:summit-lake",
+          "name": "Summit Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:braxton:sutton-lake-tailwaters",
+          "name": "Sutton Lake (Tailwaters)",
+          "type": "trout"
+        },
+        {
+          "id": "stream:randolph:tygart-valley-river-headwaters",
+          "name": "Tygart Valley River (Headwaters)",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-10-27",
       "locations": [

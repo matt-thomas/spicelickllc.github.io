@@ -137,5 +137,34 @@ class ResolverTests(unittest.TestCase):
         self.assertEqual(out[0].id, "stream:nicholas:cherry-river")
 
 
+class ProductionAliasTests(unittest.TestCase):
+    """Checks against the real data/aliases.json + data/waterbodies.json."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.resolver = Resolver.from_files(
+            SCRAPER_ROOT / "data" / "aliases.json",
+            SCRAPER_ROOT / "data" / "waterbodies.json",
+        )
+
+    def test_jennings_randolph_tailwaters_is_the_north_branch_reach(self):
+        """WV DNR's only North Branch Potomac stocking is the one-mile reach
+        below Jennings Randolph Dam at Barnum (M-F in the regulations). The
+        lake itself is not on the trout schedule, and the lower/middle/upper
+        "North Branch Potomac River" sections are stocked by Maryland DNR, so
+        every spelling the sheet has used must land on the Barnum reach."""
+        for raw in (
+            "North Branch Potomac River (Jennings Randolph Tailwaters)",
+            "North Fork Potomac River (Jennings Randolph Tailwaters)",
+            "Jennings Randolph Tailwaters",
+            "North Branch Potomac River",
+            "North Branch of Potomac River",
+        ):
+            with self.subTest(raw=raw):
+                out = self.resolver.resolve(ParsedLocation(raw_name=raw, type=TROUT))
+                self.assertEqual([r.id for r in out], ["stream:mineral:north-branch-of-potomac-river"])
+                self.assertEqual(out[0].name, "North Branch of Potomac River")
+
+
 if __name__ == "__main__":
     unittest.main()

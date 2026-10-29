@@ -1,7 +1,32 @@
 {
-  "generated_at": "2026-10-28T19:58:21Z",
+  "generated_at": "2026-10-29T23:03:01Z",
   "source": "google-sheet",
   "events": [
+    {
+      "date": "2026-10-29",
+      "locations": [
+        {
+          "id": "stream:greenbrier:big-clear-creek",
+          "name": "Big Clear Creek",
+          "type": "trout"
+        },
+        {
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
+          "type": "trout"
+        },
+        {
+          "id": "lake:barbour:teter-creek-lake",
+          "name": "Teter Creek Lake",
+          "type": "trout"
+        },
+        {
+          "id": "stream:webster:williams-river",
+          "name": "Williams River",
+          "type": "trout"
+        }
+      ]
+    },
     {
       "date": "2026-10-28",
       "locations": [
@@ -181,8 +206,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -1466,8 +1491,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -3416,8 +3441,8 @@
           "type": "gold_rush"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -5236,8 +5261,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -6621,8 +6646,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -7701,8 +7726,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -7901,8 +7926,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -8111,8 +8136,8 @@
       "date": "2025-06-04",
       "locations": [
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         }
       ]
@@ -9656,8 +9681,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -11561,8 +11586,8 @@
           "type": "gold_rush"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -13051,8 +13076,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {
@@ -14376,8 +14401,8 @@
           "type": "trout"
         },
         {
-          "id": "lake:mineral:jennings-randolph-lake",
-          "name": "Jennings Randolph Lake",
+          "id": "stream:mineral:north-branch-of-potomac-river",
+          "name": "North Branch of Potomac River",
           "type": "trout"
         },
         {

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <g fill="none" stroke="#3d6b4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <!-- main ridgeline, transposed from the site logo -->
+    <path d="M6 100 L34 56 L48 74 L72 32 L92 64 L104 52 L114 100"/>
+    <!-- snow cap on the tall peak -->
+    <path d="M64 44 L72 32 L80 44" stroke-width="5"/>
+    <!-- ground line -->
+    <path d="M4 100 L116 100" stroke-width="7"/>
+  </g>
+</svg>
